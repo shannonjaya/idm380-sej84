@@ -163,7 +163,7 @@
 .menu-link {
   color: var(--neutral-white);
   text-decoration: none;
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
 }
 .menu-link:hover {
   color: var(--secondary-mid);
@@ -281,7 +281,7 @@
   background-color: var(--neutral-white);
   color: var(--primary-dark);
   text-decoration: none;
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   font-size: var(--font-small);
 }
 .primary-button:hover {
@@ -312,6 +312,8 @@
 /* LOCATION BAR */
 .location-bar {
   width: 100%;
+  display: flex;
+  justify-content: right;
 }
 .location-bar--mobile {
   display: block;
@@ -327,26 +329,7 @@
 }
 @media (min-width: 768px) {
   .location-bar--desktop {
-    display: block;
-  }
-}
-
-.location-bar-inner {
-  position: relative;
-  height: 22px;
-}
-@media (min-width: 768px) {
-  .location-bar-inner {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    height: auto;
-  }
-}
-@media (min-width: 1024px) {
-  .location-bar-inner {
-    top: 1.25rem;
-    right: 4rem;
+    display: flex;
   }
 }
 
@@ -361,6 +344,7 @@
   gap: 0.5rem;
 }
 .location-button {
+  all: unset;
   position: relative;
   display: flex;
   align-items: center;
@@ -372,6 +356,8 @@
   color: var(--neutral-white);
 }
 .location-button-label {
+  font-family: var(--font-semibold);
+  text-transform: uppercase;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -422,7 +408,7 @@
 
 .menu-link {
   all: unset;
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   font-size: var(--font-base);
   color: var(--neutral-white);
   text-decoration: none;
@@ -487,7 +473,7 @@ h1.main-title {
 }
 
 .title-main {
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   background-color: var(--secondary-mid);
   color: var(--primary-dark);
   font-size: var(--font-xlarge);
@@ -610,7 +596,7 @@ p.max-w-4xl.mx-auto.text-center {
   padding: 0.5rem 1rem;
   background-color: var(--primary-dark);
   color: var(--secondary-mid);
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   line-height: 1;
   font-size: clamp(1.75rem, 1.5rem + 2vw, 2.5rem);
 }
@@ -628,6 +614,7 @@ p.max-w-4xl.mx-auto.text-center {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: var(--rhythm);
 }
 @media (min-width: 768px) {
   .faq-grid {
@@ -657,14 +644,14 @@ p.max-w-4xl.mx-auto.text-center {
   inset-inline-end: -0.75rem;
   inset-block-start: -3rem;
   opacity: 0.1;
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   font-size: clamp(2rem, 3vw, 3rem);
   color: var(--primary-mid);
 }
 .faq-title {
   margin-block: 0 0.5rem;
   font-size: var(--font-base);
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   line-height: 1.2;
 }
 .faq-text {
@@ -689,7 +676,7 @@ p.max-w-4xl.mx-auto.text-center {
 }
 .card-info-title {
   font-size: var(--font-base);
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   margin-block: 0 0.25rem;
 }
 .card-info-text {
@@ -698,7 +685,7 @@ p.max-w-4xl.mx-auto.text-center {
   line-height: 1.4;
 }
 .link-bold {
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
 }
 
 /* EVENT CALLOUT */
@@ -759,7 +746,7 @@ p.max-w-4xl.mx-auto.text-center {
 }
 .event-title {
   margin-block: 0 1rem;
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   text-transform: uppercase;
   line-height: 1;
   font-size: clamp(1.5rem, 1.25rem + 2vw, 2rem);
@@ -830,12 +817,12 @@ p.max-w-4xl.mx-auto.text-center {
   flex-direction: column;
   gap: var(--rhythm);
   text-transform: uppercase;
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   font-size: calc(var(--font-large) * 0.8);
 }
 
 .footer-heading {
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   color: var(--secondary-mid);
   font-size: var(--font-small);
 }
@@ -846,7 +833,7 @@ p.max-w-4xl.mx-auto.text-center {
   display: grid;
   gap: 0.5rem;
 }
-.footer-list a.link-white, .safety-card a.link-white {
+.footer-list a.link-white {
   border-bottom: 2px solid var(--secondary-mid);
   font-family: var(--font-sans);
   font-size: var(--font-small);
@@ -862,7 +849,7 @@ p.max-w-4xl.mx-auto.text-center {
   }
 }
 .footer-subscribe-title {
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   color: var(--secondary-mid);
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
   margin-bottom: 0.75rem;
@@ -1000,7 +987,8 @@ p.max-w-4xl.mx-auto.text-center {
 .venue-info-grid {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--rhythm);
+  margin-top: var(--rhythm);
 }
 
 @media (min-width: 768px) {
@@ -1019,7 +1007,12 @@ p.max-w-4xl.mx-auto.text-center {
   padding: 1rem;
   overflow: hidden;
   border-radius: 0.375rem;
-  background-color: var(--white-blue);
+  background-color: var(--light-blue);
+}
+a.font-shield-bold {
+  font-family: var(--font-semibold);
+  border-bottom: 2px solid var(--tertiary-mid);
+  color: var(--primary-mid);
 }
 
 @media (min-width: 768px) {
@@ -1104,6 +1097,11 @@ p.max-w-4xl.mx-auto.text-center {
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
+}
+.font-shield-bold.link-white {
+  font-family: var(--font-bold);
+  border-bottom: 2px solid var(--tertiary-mid);
+  color: var(--neutral-white);
 }
 
 @media (min-width: 1536px) {

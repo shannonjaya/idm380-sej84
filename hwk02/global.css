@@ -72,7 +72,8 @@
 
   /* TYPOGRAPHY */
   --font-sans: "ShieldSans Regular", sans-serif;
-  --font-bold: "ShieldSans Semibold Condensed", sans-serif;
+  --font-semibold: "ShieldSans Semibold Condensed", sans-serif;
+  --font-bold: "ShieldSans Bold", sans-serif;
   --font-black: "ShieldSans Black", sans-serif;
   --font-serif: "TeeLine Bold Italic", serif;
   --font-light: "ShieldSans Light Condensed", sans-serif;
@@ -128,7 +129,7 @@ h1,
 h2,
 h3 {
   text-transform: uppercase;
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
 }
 
 h2.event-title {
