@@ -15,11 +15,11 @@
       rel="apple-touch-icon"
       href="https://s3.topgolf.com/apple-touch-icon-cpa.png?v=2023"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
-    <a href="#content" class="btn sm skip-to-content-link">Skip to Content</a>
+    <a href="#content" class="skip-btn">Skip to Content</a>
     <header class="site-header">
       <div class="site-header-inner">
         <input
@@ -163,39 +163,49 @@
         <nav class="site-nav" aria-label="Primary">
           <ul class="menu-links">
             <li>
-              <a id="nav-link-games" class="menu-link" href="/us/play/games/"
+              <a
+                id="nav-link-games"
+                target="_blank"
+                class="nav-link"
+                href="https://topgolf.com/us/play/games/"
                 >Games</a
               >
             </li>
             <li>
-              <a id="nav-link-fnb" class="menu-link" href="/us/menu/"
+              <a
+                id="nav-link-fnb"
+                target="_blank"
+                class="nav-link"
+                href="https://topgolf.com/us/menu/"
                 >Food &amp; Drink</a
               >
             </li>
             <li>
-              <button
-                id="nav-btn-play-toggle"
-                class="menu-link menu-link--toggle"
-                type="button"
+              <a
+                id="nav-link-play"
+                target="_blank"
+                class="nav-link"
+                href="https://topgolf.com/us/experience/"
+                >Play</a
               >
-                Play
-              </button>
             </li>
           </ul>
         </nav>
 
         <div class="location-bar location-bar--mobile" aria-hidden="false">
           <div class="location-bar-inner">
-            <div class="nav-location location-actions">
+            <div class="nav-actions">
               <a
                 id="nav-btn-pav-global"
-                class="px-4 py-1 text-xxs uppercase font-shield-bold leading-none tracking-wide rounded-full bg-white !text-brand hover:bg-brand-bright hover:!text-white border-none"
-                href="/us/plan-a-visit/"
+                target="_blank"
+                class="btn btn-light"
+                href="https://topgolf.com/us/plan-a-visit/"
                 >Book a Bay</a
               ><a
                 id="nav-btn-event"
-                class="px-4 py-1 text-xxs uppercase font-shield-bold leading-none tracking-wide rounded-full bg-accent-cyan !text-brand hover:bg-brand-bright hover:!text-white border-none"
-                href="/us/plan-an-event/"
+                target="_blank"
+                class="btn btn-secondary"
+                href="https://topgolf.com/us/plan-an-event/"
                 >Plan an Event</a
               >
             </div>
@@ -204,18 +214,14 @@
 
         <div class="location-bar location-bar--desktop" aria-hidden="false">
           <div class="location-bar-inner">
-            <div class="nav-location">
-              <button class="location-button" type="button">
-                <span class="location-button-label">
-                  <i
-                    class="fas fa-location-dot location-button-icon"
-                    aria-hidden="true"
-                  ></i>
-                  <span class="find-a-location-btn">Find a Location</span>
-                </span>
-                <i class="fas fa-chevron-down" aria-hidden="true"></i>
-              </button>
-            </div>
+            <a
+              href="https://topgolf.com/us/experience/"
+              id="nav-link-find-location"
+              target="_blank"
+              class="nav-link"
+            >
+              Find a Topgolf
+            </a>
           </div>
         </div>
       </div>
@@ -223,23 +229,21 @@
     <main id="content" class="site-main">
       <section class="section">
         <div class="container">
-          <h1 class="main-title">
+          <h1 class="page-title">
             <span class="title">The Topgolf</span>
-            <span class="block"
+            <span class="title-break"
               ><span class="title-main">Experience</span></span
             >
           </h1>
-          <p class="text-center">
-            <span class="font-teeline-bold-italic">So what is Topgolf?</span>
-            In short, we’re a sports entertainment complex that features an
+          <p class="page-intro">
+            <span class="intro-question">So what is Topgolf?</span>
+            In short, we're a sports entertainment complex that features an
             inclusive, high-tech golf game that everyone can enjoy, paired with
             an outstanding food and beverage menu, all-weather hitting bays and
             music. Every Topgolf has an energetic hum that you can feel right
             when you walk through the door.
           </p>
-          <h2 class="normal-case font-teeline-bold-italic text-center">
-            Here’s how Topgolf works:
-          </h2>
+          <h2 class="section-subtitle">Here’s how Topgolf works:</h2>
         </div>
       </section>
 
@@ -259,12 +263,14 @@
               </picture>
             </div>
             <div class="feature-content">
-              <div class="step-badge">
-                <span class="step-badge-label">Step</span
-                ><span class="step-badge-num">1</span>
+              <div class="step-heading">
+                <div class="step-badge">
+                  <span class="step-badge-label">Step</span
+                  ><span class="step-badge-num">1</span>
+                </div>
+                <h2 class="step-title">Find Your Crew</h2>
               </div>
-              <h2 class="step-title">Find Your Crew</h2>
-              <p class="feature-text">
+              <p class="step-description">
                 Whether you’re a planner or a procrastinator, we’ve got options
                 for everyone. Make a reservation in advance with our super
                 simple online booking tool or walk right in and put your name
@@ -290,7 +296,7 @@
               <h3 class="faq-title">Does Topgolf offer any discounts?</h3>
               <p class="faq-text">
                 Absolutely! View all the
-                <a class="font-shield-bold" href="/us/promo/"
+                <a class="highlighted-link" href="/us/promo/"
                   >deals and promotions</a
                 >
                 currently available at Topgolf, with no coupon cutting required.
@@ -302,7 +308,7 @@
               <p class="faq-text">
                 Our gift cards are good for anything in the building — for gear,
                 game play, food, and even lessons. You can
-                <a class="font-shield-bold" href="/us/gift-cards/"
+                <a class="highlighted-link" href="/us/gift-cards/"
                   >buy them online</a
                 >, at a Topgolf venue, or in thousands of retail locations
                 nationwide.
@@ -328,12 +334,14 @@
               </picture>
             </div>
             <div class="feature-content feature-content--reversed">
-              <div class="step-badge">
-                <span class="step-badge-label">Step</span
-                ><span class="step-badge-num">2</span>
+              <div class="step-heading">
+                <div class="step-badge">
+                  <span class="step-badge-label">Step</span
+                  ><span class="step-badge-num">2</span>
+                </div>
+                <h2 class="step-title">Arrive &amp; Check In</h2>
               </div>
-              <h2 class="step-title">Arrive &amp; Check In</h2>
-              <p class="feature-text">
+              <p class="step-description">
                 Upon arrival, check in with our front desk team who will find
                 the perfect bay for you. Before or after you play, grab a drink
                 in our full bar and restaurant.
@@ -343,27 +351,24 @@
           <div class="venue-info-grid">
             <div class="card">
               <div class="card-image">
-                <picture class="overflow-hidden"
-                  ><img
+                <picture>
+                  <img
                     src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Ffnb%2Ffood%2Ftg-fnb-food-shareables-tacos-tres-chx_k10wgl_c_scale.jpg&amp;fit=cover&amp;width=320&amp;height=180&amp;format=png"
-                    class="object-cover w-full h-full"
                     alt="Bites and Shareables"
                     width="320"
                     height="180"
                     loading="lazy"
-                /></picture>
+                  />
+                </picture>
               </div>
               <div class="card-content">
-                <h3
-                  class="mb-2 text-sm leading-none uppercase font-shield-bold"
-                >
-                  Food + Drink
-                </h3>
-                <p class="mb-0 text-sm leading-snug 2xl:text-sm">
+                <h3 class="card-title">Food + Drink</h3>
+                <p class="card-text">
                   It may seem like we’re all about fun and games, but we know
                   our way around a kitchen.<br /><a
-                    class="font-shield-bold"
-                    href="/us/menu/"
+                    target="_blank"
+                    class="highlighted-link"
+                    href="https://topgolf.com/us/menu/"
                     >View the menu »</a
                   >
                 </p>
@@ -371,29 +376,24 @@
             </div>
             <div class="card">
               <div class="card-image">
-                <picture class="overflow-hidden"
-                  ><img
+                <picture>
+                  <img
                     src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Ftg-Bay-Dispenser-Ball-Tee-1.jpg&amp;fit=cover&amp;width=320&amp;height=180&amp;format=png"
-                    class="object-cover w-full h-full"
                     alt="Exterior of Topgolf"
                     width="320"
                     height="180"
                     loading="lazy"
-                /></picture>
+                  />
+                </picture>
               </div>
               <div class="card-content">
-                <h3
-                  class="mb-2 text-sm leading-none uppercase font-shield-bold"
-                >
-                  View Photo Gallery
-                </h3>
-                <p class="mb-0 text-sm leading-snug 2xl:text-sm">
-                  Explore<!-- -->
-                  <!-- -->a Topgolf<!-- -->
-                  <!-- -->venue, there’s way more to do here than just hitting
-                  golf balls.<br /><a
-                    class="font-shield-bold"
-                    href="/us/gallery/"
+                <h3 class="card-title">View Photo Gallery</h3>
+                <p class="card-text">
+                  Explore a Topgolf venue, there’s way more to do here than just
+                  hitting golf balls.<br /><a
+                    target="_blank"
+                    class="highlighted-link"
+                    href="https://topgolf.com/us/gallery/"
                     >View Gallery »</a
                   >
                 </p>
@@ -401,19 +401,17 @@
             </div>
             <div class="safety-card">
               <div class="safety-header">
-                <i class="text-5xl text-white fas fa-shield 2xl:text-7xl"></i>
-                <h3
-                  class="text-lg leading-1 uppercase font-shield-bold 2xl:text-left"
-                >
-                  Safety + <span class="block">Code of Conduct</span>
+                <i class="safety-icon fas fa-shield" aria-hidden="true"></i>
+                <h3 class="safety-title">
+                  Safety + <span class="title-break">Code of Conduct</span>
                 </h3>
               </div>
-              <p class="mb-0 text-sm leading-snug">
+              <p class="safety-text">
                 We are committed to providing an excellent experience in a
                 welcoming and inclusive environment so we can have fun together.
                 So for all parties involved, and we do mean parties, please
-                follow our<!-- -->
-                <a class="font-shield-bold link-white" href="/us/play-safely/"
+                follow our
+                <a href="https://topgolf.com/us/play-safely/" target="_blank"
                   >code of conduct</a
                 >.
               </p>
@@ -438,19 +436,26 @@
               </picture>
             </div>
             <div class="feature-content">
-              <div class="step-badge">
-                <span class="step-badge-label">Step</span
-                ><span class="step-badge-num">3</span>
+              <div class="step-heading">
+                <div class="step-badge">
+                  <span class="step-badge-label">Step</span
+                  ><span class="step-badge-num">3</span>
+                </div>
+                <h2 class="step-title">Pick Your Game</h2>
               </div>
-              <h2 class="step-title">Pick Your Game</h2>
-              <p class="feature-text">
+              <p class="step-description">
                 Once you settle into your all-weather bay, a Bayhost will help
                 you set up your game and create profiles for each player. The
                 fun part is deciding which of the more than a dozen games to
                 play first.
               </p>
-              <div class="button-row">
-                <a class="btn" href="/us/play/games/">Available Games</a>
+              <div class="button-group">
+                <a
+                  class="btn btn-primary"
+                  href="https://topgolf.com/us/play/games/"
+                  target="_blank"
+                  >Available Games</a
+                >
               </div>
             </div>
           </div>
@@ -507,30 +512,30 @@
               </picture>
             </div>
             <div class="feature-content feature-content--reversed">
-              <div class="step-badge">
-                <span class="step-badge-label">Step</span
-                ><span class="step-badge-num">4</span>
+              <div class="step-heading">
+                <div class="step-badge">
+                  <span class="step-badge-label">Step</span
+                  ><span class="step-badge-num">4</span>
+                </div>
+                <h2 class="step-title">Crush It</h2>
               </div>
-              <h2 class="step-title">Crush It</h2>
-              <p class="feature-text">
+              <p class="step-description">
                 Using our complimentary clubs or your own, take aim at the giant
                 outfield targets and our high-tech balls will score themselves.
                 While you’re playing, order food and drinks and catch the game
                 on the HDTVs in your bay.
               </p>
-              <div class="card-info">
-                <div class="card-info-icon">
-                  <i class="fa-solid fa-mobile" aria-hidden="true"></i>
-                </div>
-                <div class="card-info-body">
-                  <h3 class="card-info-title">Download the Topgolf App</h3>
-                  <p class="card-info-text">
+              <div class="app-info">
+                <div class="app-info-content">
+                  <h3 class="app-info-title">Download the Topgolf App</h3>
+                  <p class="app-info-text">
                     The free Topgolf App gives you access to game history, bay
                     controls and much more.
                     <a
-                      class="link-bold"
+                      class="highlighted-link"
+                      target="_blank"
+                      href="https://topgolf.com/us/company/app/"
                       aria-label="Full features of the Topgolf App"
-                      href="/us/company/app/"
                       >Full features »</a
                     >
                   </p>
@@ -572,8 +577,11 @@
                   catering packages perfect for your next birthday party,
                   company event, fundraiser or social get-together!
                 </p>
-                <div class="event-cta">
-                  <a class="btn white" href="/us/plan-an-event/"
+                <div class="event-action">
+                  <a
+                    class="btn btn-light"
+                    target="_blank"
+                    href="https://topgolf.com/us/plan-an-event/"
                     >Parties &amp; Events</a
                   >
                 </div>
@@ -588,30 +596,52 @@
       <div class="footer-container">
         <div class="footer-columns">
           <div class="footer-primary-links">
-            <ul class="primary-links">
+            <ul class="footer-links">
               <li>
-                <a href="/us/gift-cards/" class="link-white">Gift Cards</a>
+                <a
+                  href="https://topgolf.com/us/gift-cards/"
+                  target="_blank"
+                  class="footer-link"
+                  >Gift Cards</a
+                >
               </li>
               <li>
-                <a href="/us/pricing/memberships/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/pricing/memberships/"
+                  target="_blank"
+                  class="footer-link"
                   >Memberships</a
                 >
               </li>
               <li>
-                <a href="/us/play/golf-lessons/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/play/golf-lessons/"
+                  target="_blank"
+                  class="footer-link"
                   >Golf Lessons</a
                 >
               </li>
               <li>
-                <a href="/us/locations/" class="link-white">Find a Location</a>
+                <a
+                  href="https://topgolf.com/us/locations/"
+                  target="_blank"
+                  class="footer-link"
+                  >Find a Location</a
+                >
               </li>
               <li>
-                <a href="/us/company/contact-us/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/company/contact-us/"
+                  target="_blank"
+                  class="footer-link"
                   >Contact Us</a
                 >
               </li>
               <li>
-                <a href="https://careers.topgolf.com/" class="link-white"
+                <a
+                  href="https://careers.topgolf.com/"
+                  target="_blank"
+                  class="footer-link"
                   >Careers</a
                 >
               </li>
@@ -621,36 +651,50 @@
             <h3 class="footer-heading">Legal Stuff</h3>
             <ul class="footer-list">
               <li>
-                <a href="/us/company/terms-and-conditions/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/company/terms-and-conditions/"
+                  target="_blank"
+                  class="footer-link"
                   >Terms &amp; Conditions</a
                 >
               </li>
               <li>
-                <a href="/us/company/web-accessibility/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/company/web-accessibility/"
+                  target="_blank"
+                  class="footer-link"
                   >Web Accessibility</a
                 >
               </li>
               <li>
-                <a href="/us/company/scam-awareness/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/company/scam-awareness/"
+                  target="_blank"
+                  class="footer-link"
                   >Scam Awareness</a
                 >
               </li>
               <li>
                 <a
-                  href="/us/company/climate-related-financial-risks-disclosure/"
-                  class="link-white"
+                  href="https://topgolf.com/us/company/climate-related-financial-risks-disclosure/"
+                  target="_blank"
+                  class="footer-link"
                   >Climate Disclosure</a
                 >
               </li>
               <li>
-                <a href="/us/company/privacy-policy/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/company/privacy-policy/"
+                  target="_blank"
+                  class="footer-link"
                   >Privacy, Ad &amp; Cookie Policies</a
                 >
               </li>
               <li>
                 <a
                   href="https://privacyportal.onetrust.com/webform/e35618a4-0a94-48f8-bb8e-00c8b0f8a3a2/8c305244-3603-49b1-ab59-e6885e8df7be"
-                  class="link-white"
+                  target="_blank"
+                  class="footer-link"
                   >Your Privacy Choices</a
                 >
               </li>
@@ -660,104 +704,68 @@
             <h3 class="footer-heading">Company</h3>
             <ul class="footer-list">
               <li>
-                <a href="/us/driving-for-good/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/driving-for-good/"
+                  target="_blank"
+                  class="footer-link"
                   >Driving for Good</a
                 >
               </li>
               <li>
-                <a href="/us/international/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/international/"
+                  target="_blank"
+                  class="footer-link"
                   >International</a
                 >
               </li>
               <li>
-                <a href="/us/company/leadership/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/company/leadership/"
+                  target="_blank"
+                  class="footer-link"
                   >Leadership</a
                 >
               </li>
               <li>
-                <a href="/us/play-safely/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/play-safely/"
+                  target="_blank"
+                  class="footer-link"
                   >Conduct &amp; Safety</a
                 >
               </li>
               <li>
-                <a href="https://press.topgolf.com/" class="link-white"
+                <a
+                  href="https://press.topgolf.com/"
+                  target="_blank"
+                  class="footer-link"
                   >Press Room</a
                 >
               </li>
               <li>
-                <a href="/us/company/vendors/" class="link-white"
+                <a
+                  href="https://topgolf.com/us/company/vendors/"
+                  target="_blank"
+                  class="footer-link"
                   >For Vendors</a
                 >
               </li>
             </ul>
           </div>
-        </div>
-        <div class="footer-subscribe">
-          <h3 class="footer-subscribe-title">Sign up for offers + updates</h3>
-          <p class="footer-subscribe-text">
-            Yes, another email signup thingy in a website footer. But our email
-            and text updates are ones you’ll
-            <span class="whitespace-nowrap">actually read.</span>
-          </p>
-          <a class="btn sm white" href="/us/email-and-text-alerts/"
-            >Subscribe</a
-          >
-          <div class="footer-social-row">
-            <span class="footer-social-label"
-              >Follow <span class="font-shield-bold">@topgolf:</span></span
+          <div class="footer-subscribe">
+            <h3 class="footer-heading">Sign up for offers + updates</h3>
+            <p class="footer-subscribe-text">
+              Yes, another email signup thingy in a website footer. But our
+              email and text updates are ones you’ll
+              <span class="nowrap">actually read.</span>
+            </p>
+            <a
+              class="btn btn-light"
+              href="https://topgolf.com/us/email-and-text-alerts/"
+              target="_blank"
+              >Subscribe</a
             >
-            <ul class="footer-social">
-              <li>
-                <a
-                  target="_blank"
-                  id="sidebar-nav-insta"
-                  class="link-white"
-                  href="https://www.instagram.com/topgolf"
-                  ><span class="sr-only">Follow Topgolf on Instagram</span
-                  ><i class="fab fa-instagram fa-2x" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  id="sidebar-nav-tok"
-                  class="link-white"
-                  href="https://www.tiktok.com/@topgolf"
-                  ><span class="sr-only">Follow Topgolf on TikTok</span
-                  ><i class="fab fa-tiktok fa-2x" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  id="sidebar-nav-yt"
-                  class="link-white"
-                  href="https://www.youtube.com/topgolf"
-                  ><span class="sr-only">Follow Topgolf on YouTube</span
-                  ><i class="fab fa-youtube fa-2x" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  id="sidebar-nav-fb"
-                  class="link-white"
-                  href="https://facebook.com/topgolf"
-                  ><span class="sr-only">Follow Topgolf on Facebook</span
-                  ><i class="fab fa-facebook fa-2x" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li class="app-link">
-                <a
-                  id="sidebar-nav-app"
-                  class="link-white"
-                  href="/us/company/app/"
-                  ><span class="sr-only">Download the Topgolf App</span
-                  ><i class="fas fa-mobile-alt fa-2x" aria-hidden="true"></i
-                  ><span class="app-label" aria-hidden="true">APP</span></a
-                >
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -766,7 +774,12 @@
           <div>
             <ul class="footer-logos-list">
               <li>
-                <a href="//topgolf.com/" class="teg-logo">Topgolf Venues</a>
+                <picture
+                  ><a href="//topgolf.com/" class="teg-logo"
+                    ><img
+                      src="./assets/logo-TG-wordmark-white.svg"
+                      alt="Topgolf Logo" /></a
+                ></picture>
               </li>
               <li>
                 <a
@@ -774,13 +787,19 @@
                   target="_blank"
                   class="teg-logo"
                   rel="noreferrer"
-                  >Toptracer</a
-                >
+                  ><picture
+                    ><img
+                      src="./assets/logo-TT-white.svg"
+                      alt="Toptracer Logo" /></picture
+                ></a>
               </li>
               <li>
                 <a href="//swingsuite.topgolf.com/" class="teg-logo"
-                  >Topgolf Swing Suite</a
-                >
+                  ><picture
+                    ><img
+                      src="./assets/teg-ss-logo-registered-vertical-tab-alt-white.svg"
+                      alt="Topgolf Swing Suite Logo" /></picture
+                ></a>
               </li>
             </ul>
           </div>
@@ -791,19 +810,6 @@
               ><span class="footer-meta-line">All rights reserved.</span>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom-left">
-          <div class="contrast-switcher">
-            <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i
-            ><button class="link-white">Increase Contrast</button>
-          </div>
-        </div>
-        <div class="footer-external-note">
-          <i class="fas fa-external-link-alt" aria-hidden="true"></i>Indicates
-          link opens external site which may not meet
-          <span class="whitespace-nowrap">accessibility guidelines</span>
         </div>
       </div>
     </footer>
