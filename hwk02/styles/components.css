@@ -46,8 +46,8 @@
 .skip-nav-link {
   padding: calc(var(--rhythm) * 0.25) calc(var(--rhythm) * 0.5);
   font-size: var(--font-small);
-  background-color: var(--primary-dark);
-  color: var(--secondary-mid);
+  background-color: var(--neutral-white);
+  color: var(--primary-dark);
   position: absolute;
   top: 0;
   left: 50%;
@@ -58,12 +58,18 @@
   text-decoration: none;
 }
 
+.skip-nav-link:hover {
+  background-color: var(--primary-dark);
+  color: var(--secondary-mid);
+}
+
 .skip-nav-link:focus {
+  left: 76%;
   opacity: 1;
-  position: static;
+  position: absolute;
   width: auto;
-  height: auto;;
-  margin: var(--rhythm) auto;
+  height: auto;
+  margin-top: 1.4rem;
 }
 
 /* HEADER */
