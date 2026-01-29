@@ -23,6 +23,11 @@
   color: var(--secondary-mid);
 }
 
+.btn-primary:focus {
+  outline: var(--focus-outline-width) solid var(--primary-mid);
+  outline-offset: var(--focus-outline-offset);
+}
+
 .btn-secondary {
   background-color: var(--secondary-mid);
   color: var(--primary-dark);
@@ -33,6 +38,11 @@
   color: var(--neutral-white);
 }
 
+.btn-secondary:focus {
+  outline: var(--focus-outline-width) solid var(--primary-mid);
+  outline-offset: var(--focus-outline-offset);
+}
+
 .btn-light {
   background-color: var(--neutral-white);
   color: var(--primary-dark);
@@ -41,6 +51,11 @@
 .btn-light:hover {
   background-color: var(--primary-mid);
   color: var(--neutral-white);
+}
+
+.btn-light:focus {
+  outline: var(--focus-outline-width) solid var(--neutral-white);
+  outline-offset: var(--focus-outline-offset);
 }
 
 .skip-nav-link {
@@ -109,7 +124,7 @@
   color: var(--secondary-mid);
 }
 
-.nav-link:focus {
+.nav-link:focus{
   outline: var(--focus-outline-width) solid var(--focus-outline-color);
   outline-offset: var(--focus-outline-offset);
   border-radius: 2px;

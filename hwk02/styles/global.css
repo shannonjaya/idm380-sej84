@@ -55,7 +55,7 @@
   /* FOCUS STYLES */
   --focus-outline-color: var(--tertiary-mid);
   --focus-outline-width: 3px;
-  --focus-outline-offset: 3px;
+  --focus-outline-offset: 5px;
 
   /* SPACING */
   --rhythm: 1.5rem;
