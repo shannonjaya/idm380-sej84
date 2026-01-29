@@ -53,8 +53,17 @@
   left: 50%;
   z-index: 500;
   margin-top: -1rem;
+  border-radius: 99999px;
   opacity: 0;
   text-decoration: none;
+}
+
+.skip-nav-link:focus {
+  opacity: 1;
+  position: static;
+  width: auto;
+  height: auto;;
+  margin: var(--rhythm) auto;
 }
 
 /* HEADER */
