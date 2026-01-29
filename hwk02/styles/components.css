@@ -109,6 +109,12 @@
   color: var(--secondary-mid);
 }
 
+.nav-link:focus {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: 2px;
+}
+
 .nav-link--toggle {
   display: inline-flex;
   align-items: center;
