@@ -194,7 +194,7 @@ picture {
   }
   a.highlighted-link:hover,
   a.highlighted-link:focus {
-    color: var(--primary-mid);
-    border-bottom: 2px solid var(--secondary-mid);
+    color: var(--secondary-mid);
+    border-bottom: 2px solid var(--tertiary-mid);
   }
 }
