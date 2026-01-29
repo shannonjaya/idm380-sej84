@@ -679,6 +679,7 @@ h1.page-title {
   font-family: var(--font-semi-condensed);
   font-weight: 800;
   letter-spacing: var(--letter-spacing-wide);
+  line-height: var(--line-height-tight);
   color: var(--secondary-mid);
   font-size: var(--font-base);
   margin: 0;
