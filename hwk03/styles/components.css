@@ -204,9 +204,12 @@ nav.location-bar.location-bar--desktop {
 
 .nav-toggle-label {
   display: none;
+  position: relative;
 }
 
-.nav-toggle-label span {
+.nav-toggle-label::before,
+.nav-toggle-label::after {
+  content: '';
   position: absolute;
   left: 6px;
   width: 24px;
@@ -219,15 +222,12 @@ nav.location-bar.location-bar--desktop {
     opacity 200ms ease;
 }
 
-.nav-toggle-label span:nth-child(1) {
+.nav-toggle-label::before {
   top: 8px;
+  box-shadow: 0 7px 0 var(--neutral-white);
 }
 
-.nav-toggle-label span:nth-child(2) {
-  top: 15px;
-}
-
-.nav-toggle-label span:nth-child(3) {
+.nav-toggle-label::after {
   top: 22px;
 }
 

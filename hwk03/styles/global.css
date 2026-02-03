@@ -117,6 +117,10 @@ a.highlighted-link:focus {
   border-bottom: 2px solid var(--tertiary-light);
 }
 
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
 /* TYPOGRAPHY */
 .page-intro {
   text-align: center;
