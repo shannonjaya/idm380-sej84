@@ -479,7 +479,6 @@ section.venue-info-section {
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: var(--rhythm);
   margin: var(--rhythm) auto;
-  padding: var(--rhythm);
   max-width: 90rem;
   grid-column: 1 / -1;
 }
@@ -895,6 +894,10 @@ small.footer-meta {
     width: 100%;
     grid-column: 1;
     grid-row: 1;
+  }
+
+  .button-group {
+    justify-content: center;
   }
 
   section.venue-info-section {
