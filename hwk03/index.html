@@ -19,24 +19,25 @@
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
-    <a href="#content" class="skip-nav-link">Skip to Content</a>
-    <header class="site-header">
+    <a href="#content" class="skip-nav-link" aria-label="Skip to main content">Skip to Content</a>
+    <header class="site-header" aria-label="Site header with logo and navigation">
       <input
         type="checkbox"
         id="nav-toggle"
         class="nav-toggle"
+        aria-label="Toggle main navigation menu"
       />
 
       <label
         for="nav-toggle"
         class="nav-toggle-label"
-        aria-label="Menu"
+        aria-label="Menu toggle button"
         tabindex="0"
       >
       </label>
 
-      <a class="nav-logo-link" href="" aria-label="Topgolf">
-        <figure class="nav-logo nav-logo--shield" aria-hidden="true">
+      <a class="nav-logo-link" href="" aria-label="Topgolf home page link">
+        <figure class="nav-logo nav-logo--shield" aria-hidden="true" aria-label="Topgolf shield logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 144 136.46"
@@ -78,7 +79,7 @@
             ></path>
           </svg>
         </figure>
-        <figure class="nav-logo nav-logo--wordmark" aria-hidden="true">
+        <figure class="nav-logo nav-logo--wordmark" aria-hidden="true" aria-label="Topgolf wordmark logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 360 60"
@@ -155,90 +156,88 @@
         </figure>
       </a>
 
-      <nav class="site-nav" aria-label="Primary">
-        <ul class="menu-links">
-          <li>
+      <nav class="site-nav" aria-label="Primary site navigation menu">
+        <ul class="menu-links" aria-label="Main navigation links">
+          <li aria-label="Games navigation item">
             <a
               id="nav-link-games"
               target="_blank"
               class="nav-link"
               href=""
-             
-              >Games</a
-            >
+              aria-label="Go to Games page"
+              >Games</a>
           </li>
-          <li>
+          <li aria-label="Food and Drink navigation item">
             <a
               id="nav-link-fnb"
               target="_blank"
               class="nav-link"
               href=""
-             
-              >Food &amp; Drink</a
-            >
+              aria-label="Go to Food and Drink page"
+              >Food &amp; Drink</a>
           </li>
-          <li>
+          <li aria-label="Play navigation item">
             <a
               id="nav-link-play"
               target="_blank"
               class="nav-link"
               href=""
-             
-              >Play</a
-            >
+              aria-label="Go to Play page"
+              >Play</a>
           </li>
         </ul>
       </nav>
 
-      <nav class="location-bar location-bar--mobile" aria-hidden="false" aria-label="Call to action">
+      <nav class="location-bar location-bar--mobile" aria-hidden="false" aria-label="Mobile call to action navigation">
         <a
           id="nav-btn-pav-global"
           target="_blank"
           class="btn btn-light"
           href=""
-         
-          >Book a Bay</a
-        ><a
+          aria-label="Book a bay at Topgolf"
+          >Book a Bay</a>
+        <a
           id="nav-btn-event"
           target="_blank"
           class="btn btn-secondary"
-          href=""                   >Plan an Event</a
-        >
+          href=""
+          aria-label="Plan an event at Topgolf"
+          >Plan an Event</a>
       </nav>
 
-      <nav class="location-bar location-bar--desktop" aria-hidden="false" aria-label="Find location">
+      <nav class="location-bar location-bar--desktop" aria-hidden="false" aria-label="Desktop find location navigation">
         <a
           href=""
           id="nav-link-find-location"
           target="_blank"
           class="nav-link"
-         
+          aria-label="Find a Topgolf location"
         >
           Find a Topgolf
         </a>
       </nav>
     </header>
 
-    <main id="content" class="site-main">
-      <section class="section section--intro">
-        <h1 class="page-title">
-          <strong class="title">The Topgolf</strong>
-          <strong class="title-main">Experience</strong>
+    <main id="content" class="site-main" aria-label="Main content area">
+      <section class="section section--intro" aria-label="Introduction section">
+        <h1 class="page-title" aria-label="Topgolf Experience page title">
+          <strong class="title" aria-label="The Topgolf">The Topgolf</strong>
+          <strong class="title-main" aria-label="Experience">Experience</strong>
         </h1>
-        <p class="page-intro">
-          <strong class="intro-question">So what is Topgolf?</strong>
+        <p class="page-intro" aria-label="Introduction paragraph about Topgolf">
+          <strong class="intro-question" aria-label="So what is Topgolf?">So what is Topgolf?</strong>
           In short, we're a sports entertainment complex that features an
           inclusive, high-tech golf game that everyone can enjoy, paired with
           an outstanding food and beverage menu, all-weather hitting bays and
           music. Every Topgolf has an energetic hum that you can feel right
           when you walk through the door.
         </p>
-        <h2 class="section-subtitle">Here's how Topgolf works:</h2>
+        <h2 class="section-subtitle" aria-label="How Topgolf works">Here's how Topgolf works:</h2>
       </section>
 
       <!-- Step 1 -->
-      <section class="section section--steps has-dots-left">
-        <figure class="feature-media">
+      <section class="section section--steps has-dots-left" aria-label="Step 1 section: Find Your Crew">
+        <figure class="feature-media" aria-label="Photo of guests at Topgolf">
           <img
             src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fday%2Ftg-cpa-bay-day-adult-group-xnHLtL3-rev.jpg&amp;fit=cover&amp;width=800&amp;height=450&amp;format=png"
             alt="Guests at Topgolf"
@@ -247,15 +246,15 @@
             loading="lazy"
           />
         </figure>
-        <article class="feature-content">
-          <hgroup class="step-heading">
-            <strong class="step-badge">
-              <strong class="step-badge-label">Step</strong>
-              <strong class="step-badge-num">1</strong>
+        <article class="feature-content" aria-label="Step 1 content: Find Your Crew">
+          <hgroup class="step-heading" aria-label="Step 1 heading">
+            <strong class="step-badge" aria-label="Step badge">
+              <strong class="step-badge-label" aria-label="Step">Step</strong>
+              <strong class="step-badge-num" aria-label="Step 1">1</strong>
             </strong>
-            <h2 class="step-title">Find Your Crew</h2>
+            <h2 class="step-title" aria-label="Find Your Crew">Find Your Crew</h2>
           </hgroup>
-          <p class="step-description">
+          <p class="step-description" aria-label="Description for Step 1">
             Whether you're a planner or a procrastinator, we've got options
             for everyone. Make a reservation in advance with our super
             simple online booking tool or walk right in and put your name
@@ -265,21 +264,21 @@
           </p>
         </article>
 
-        <section class="faq-section">
-          <article class="faq-card">
-            <strong class="faq-icon" aria-label="Question mark">?</strong>
-            <h3 class="faq-title">How much does Topgolf cost?</h3>
-            <p class="faq-text">
+        <section class="faq-section" aria-label="Frequently asked questions for Step 1">
+          <article class="faq-card" aria-label="FAQ: How much does Topgolf cost?">
+            <strong class="faq-icon" aria-label="Question mark icon">?</strong>
+            <h3 class="faq-title" aria-label="How much does Topgolf cost?">How much does Topgolf cost?</h3>
+            <p class="faq-text" aria-label="Answer: Each bay is priced by the hour, with the hourly rate varying by day and time, plus a $6 one-time member fee for new players. Up to 6 players can be in a bay and play. For safety reasons, only one person can be hitting at one time.">
               Each bay is priced by the hour, with the hourly rate varying by
               day and time, plus a $6 one-time member fee for new players. Up
               to 6 players can be in a bay and play. For safety reasons, only
               one person can be hitting at one time.
             </p>
           </article>
-          <article class="faq-card">
-            <strong class="faq-icon" aria-label="Question mark">?</strong>
-            <h3 class="faq-title">Does Topgolf offer any discounts?</h3>
-            <p class="faq-text">
+          <article class="faq-card" aria-label="FAQ: Does Topgolf offer any discounts?">
+            <strong class="faq-icon" aria-label="Question mark icon">?</strong>
+            <h3 class="faq-title" aria-label="Does Topgolf offer any discounts?">Does Topgolf offer any discounts?</h3>
+            <p class="faq-text" aria-label="Answer: Absolutely! View all the deals and promotions currently available at Topgolf, with no coupon cutting required.">
               Absolutely! View all the
               <a class="highlighted-link" href=""
                 >deals and promotions</a
@@ -287,10 +286,10 @@
               currently available at Topgolf, with no coupon cutting required.
             </p>
           </article>
-          <article class="faq-card">
-            <strong class="faq-icon" aria-label="Question mark">?</strong>
-            <h3 class="faq-title">Where can I buy Topgolf gift cards?</h3>
-            <p class="faq-text">
+          <article class="faq-card" aria-label="FAQ: Where can I buy Topgolf gift cards?">
+            <strong class="faq-icon" aria-label="Question mark icon">?</strong>
+            <h3 class="faq-title" aria-label="Where can I buy Topgolf gift cards?">Where can I buy Topgolf gift cards?</h3>
+            <p class="faq-text" aria-label="Answer: Our gift cards are good for anything in the building — for gear, game play, food, and even lessons. You can buy them online, at a Topgolf venue, or in thousands of retail locations nationwide.">
               Our gift cards are good for anything in the building — for gear,
               game play, food, and even lessons. You can
               <a class="highlighted-link" href=""
@@ -303,22 +302,22 @@
       </section>
 
       <!-- Step 2 -->
-      <section class="section section--steps has-dots-right">
-        <article class="feature-content--reversed">
-          <hgroup class="step-heading">
-            <strong class="step-badge">
-              <strong class="step-badge-label">Step</strong>
-              <strong class="step-badge-num">2</strong>
+      <section class="section section--steps has-dots-right" aria-label="Step 2 section: Arrive and Check In">
+        <article class="feature-content--reversed" aria-label="Step 2 content: Arrive and Check In">
+          <hgroup class="step-heading" aria-label="Step 2 heading">
+            <strong class="step-badge" aria-label="Step badge">
+              <strong class="step-badge-label" aria-label="Step">Step</strong>
+              <strong class="step-badge-num" aria-label="Step 2">2</strong>
             </strong>
-            <h2 class="step-title">Arrive &amp; Check In</h2>
+            <h2 class="step-title" aria-label="Arrive and Check In">Arrive &amp; Check In</h2>
           </hgroup>
-          <p class="step-description">
+          <p class="step-description" aria-label="Description for Step 2">
             Upon arrival, check in with our front desk team who will find
             the perfect bay for you. Before or after you play, grab a drink
             in our full bar and restaurant.
           </p>
         </article>
-        <figure class="feature-media">
+        <figure class="feature-media" aria-label="Photo of guests checking in at Topgolf">
           <img
             src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fplaymaker%2Ftg-cpa-playmaker-lobby-checkin-KTp5zGS.jpg&amp;fit=cover&amp;width=800&amp;height=450&amp;format=png"
             alt="Guests checking in at Topgolf"
@@ -328,76 +327,77 @@
           />
         </figure>
 
-        <section class="venue-info-section">
-          <article class="card">
-            <figure class="card-image">
+        <section class="venue-info-section" aria-label="Venue information for Step 2">
+          <article class="card" aria-label="Food and Drink card">
+            <figure class="card-image" aria-label="Food and Drink image">
               <img
                 src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Ffnb%2Ffood%2Ftg-fnb-food-shareables-tacos-tres-chx_k10wgl_c_scale.jpg&amp;fit=cover&amp;width=320&amp;height=180&amp;format=png"
                 alt="Bites and Shareables"
                 width="320"
                 height="180"
                 loading="lazy"
+                aria-label="Bites and Shareables image"
               />
             </figure>
-            <section>
-              <h3 class="card-title">Food + Drink</h3>
-              <p class="card-text">
+            <section aria-label="Food and Drink card content">
+              <h3 class="card-title" aria-label="Food and Drink">Food + Drink</h3>
+              <p class="card-text" aria-label="Description of Food and Drink">
                 It may seem like we're all about fun and games, but we know
                 our way around a kitchen.<br /><a
                   target="_blank"
                   class="highlighted-link"
                   href=""
-                  >View the menu »</a
-                >
+                  aria-label="View the menu"
+                  >View the menu »</a>
               </p>
             </section>
           </article>
-          <article class="card">
-            <figure class="card-image">
+          <article class="card" aria-label="Photo Gallery card">
+            <figure class="card-image" aria-label="Photo Gallery image">
               <img
                 src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Ftg-Bay-Dispenser-Ball-Tee-1.jpg&amp;fit=cover&amp;width=320&amp;height=180&amp;format=png"
                 alt="Exterior of Topgolf"
                 width="320"
                 height="180"
                 loading="lazy"
+                aria-label="Exterior of Topgolf image"
               />
             </figure>
-            <section>
-              <h3 class="card-title">View Photo Gallery</h3>
-              <p class="card-text">
+            <section aria-label="Photo Gallery card content">
+              <h3 class="card-title" aria-label="View Photo Gallery">View Photo Gallery</h3>
+              <p class="card-text" aria-label="Description of Photo Gallery">
                 Explore a Topgolf venue, there's way more to do here than just
                 hitting golf balls.<br /><a
                   target="_blank"
                   class="highlighted-link"
                   href=""
-                  >View Gallery »</a
-                >
+                  aria-label="View Gallery"
+                  >View Gallery »</a>
               </p>
             </section>
           </article>
-          <article class="safety-card">
-            <header class="safety-header">
-              <i class="safety-icon fas fa-shield" aria-hidden="true"></i>
-              <h3 class="safety-title">
-                Safety + <strong class="title-break">Code of Conduct</strong>
+          <article class="safety-card" aria-label="Safety and Code of Conduct card">
+            <header class="safety-header" aria-label="Safety header">
+              <i class="safety-icon fas fa-shield" aria-hidden="true" aria-label="Safety shield icon"></i>
+              <h3 class="safety-title" aria-label="Safety and Code of Conduct">
+                Safety + <strong class="title-break" aria-label="Code of Conduct">Code of Conduct</strong>
               </h3>
             </header>
-            <p class="safety-text">
+            <p class="safety-text" aria-label="Description of Safety and Code of Conduct">
               We are committed to providing an excellent experience in a
               welcoming and inclusive environment so we can have fun together.
               So for all parties involved, and we do mean parties, please
               follow our
-              <a href="" target="_blank"
-                >code of conduct</a
-              >.
+              <a href="" target="_blank" aria-label="Read code of conduct"
+                >code of conduct</a>.
             </p>
           </article>
         </section>
       </section>
 
       <!-- Step 3 -->
-      <section class="section section--steps has-dots-left">
-        <figure class="feature-media">
+      <section class="section section--steps has-dots-left" aria-label="Step 3 section: Pick Your Game">
+        <figure class="feature-media" aria-label="Photo of guests choosing a game at Topgolf">
           <img
             src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fplaymaker%2Ftg-cpa-playmaker-bay-panel-cb5tTjk.jpg&amp;fit=cover&amp;width=800&amp;height=450&amp;format=png"
             alt="Guests choosing a game at Topgolf"
@@ -406,60 +406,59 @@
             loading="lazy"
           />
         </figure>
-        <article class="feature-content">
-          <hgroup class="step-heading">
-            <strong class="step-badge">
-              <strong class="step-badge-label">Step</strong>
-              <strong class="step-badge-num">3</strong>
+        <article class="feature-content" aria-label="Step 3 content: Pick Your Game">
+          <hgroup class="step-heading" aria-label="Step 3 heading">
+            <strong class="step-badge" aria-label="Step badge">
+              <strong class="step-badge-label" aria-label="Step">Step</strong>
+              <strong class="step-badge-num" aria-label="Step 3">3</strong>
             </strong>
-            <h2 class="step-title">Pick Your Game</h2>
+            <h2 class="step-title" aria-label="Pick Your Game">Pick Your Game</h2>
           </hgroup>
-          <p class="step-description">
+          <p class="step-description" aria-label="Description for Step 3">
             Once you settle into your all-weather bay, a Bayhost will help
             you set up your game and create profiles for each player. The
             fun part is deciding which of the more than a dozen games to
             play first.
           </p>
-          <ul class="button-group">
-            <li>
+          <ul class="button-group" aria-label="Available games button group">
+            <li aria-label="Available Games button item">
               <a
                 class="btn btn-primary"
                 href=""
                 target="_blank"
-               
-                >Available Games</a
-              >
+                aria-label="See available games"
+                >Available Games</a>
             </li>
           </ul>
         </article>
 
-        <section class="faq-section">
-          <article class="faq-card">
-            <strong class="faq-icon" aria-label="Question mark">?</strong>
-            <h3 class="faq-title">Does Topgolf close due to weather?</h3>
-            <p class="faq-text">
+        <section class="faq-section" aria-label="Frequently asked questions for Step 3">
+          <article class="faq-card" aria-label="FAQ: Does Topgolf close due to weather?">
+            <strong class="faq-icon" aria-label="Question mark icon">?</strong>
+            <h3 class="faq-title" aria-label="Does Topgolf close due to weather?">Does Topgolf close due to weather?</h3>
+            <p class="faq-text" aria-label="Answer: Unless it's an extreme weather event, nothing can stop a good time at Topgolf, not even rain or snow. Topgolf venues are all-weather facilities with covered hitting bays that are fitted with fans for the summer and heaters for the winter.">
               Unless it's an extreme weather event, nothing can stop a good
               time at Topgolf, not even rain or snow. Topgolf venues are
               all-weather facilities with covered hitting bays that are fitted
               with fans for the summer and heaters for the winter.
             </p>
           </article>
-          <article class="faq-card">
-            <strong class="faq-icon" aria-label="Question mark">?</strong>
-            <h3 class="faq-title">
+          <article class="faq-card" aria-label="FAQ: How much does it cost to rent golf clubs at Topgolf?">
+            <strong class="faq-icon" aria-label="Question mark icon">?</strong>
+            <h3 class="faq-title" aria-label="How much does it cost to rent golf clubs at Topgolf?">
               How much does it cost to rent golf clubs at Topgolf?
             </h3>
-            <p class="faq-text">
+            <p class="faq-text" aria-label="Answer: All Topgolf clubs are complimentary to use during game play. We have clubs for men, ladies, left-handers, right-handers, kids, and toddlers for your convenience. Men's and women's clubs are already in each bay.">
               Zero dollars. Free. Nothing. All Topgolf clubs are complimentary
               to use during game play. We have clubs for men, ladies,
               left-handers, right-handers, kids, and toddlers for your
               convenience. Men's and women's clubs are already in each bay.
             </p>
           </article>
-          <article class="faq-card">
-            <strong class="faq-icon" aria-label="Question mark">?</strong>
-            <h3 class="faq-title">Can I bring my own clubs to Topgolf?</h3>
-            <p class="faq-text">
+          <article class="faq-card" aria-label="FAQ: Can I bring my own clubs to Topgolf?">
+            <strong class="faq-icon" aria-label="Question mark icon">?</strong>
+            <h3 class="faq-title" aria-label="Can I bring my own clubs to Topgolf?">Can I bring my own clubs to Topgolf?</h3>
+            <p class="faq-text" aria-label="Answer: If you're more comfortable playing with your own clubs, we have designated areas within our bays to store them. We will also store your clubs in our club room if we happen to be on a wait so that you can enjoy our venue without lugging them around.">
               If you're more comfortable playing with your own clubs, we have
               designated areas within our bays to store them. We will also
               store your clubs in our club room if we happen to be on a wait
@@ -470,24 +469,24 @@
       </section>
 
       <!-- Step 4 -->
-      <section class="section section--steps has-dots-right">
-        <article class="feature-content--reversed">
-          <hgroup class="step-heading">
-            <strong class="step-badge">
-              <strong class="step-badge-label">Step</strong>
-              <strong class="step-badge-num">4</strong>
+      <section class="section section--steps has-dots-right" aria-label="Step 4 section: Crush It">
+        <article class="feature-content--reversed" aria-label="Step 4 content: Crush It">
+          <hgroup class="step-heading" aria-label="Step 4 heading">
+            <strong class="step-badge" aria-label="Step badge">
+              <strong class="step-badge-label" aria-label="Step">Step</strong>
+              <strong class="step-badge-num" aria-label="Step 4">4</strong>
             </strong>
-            <h2 class="step-title">Crush It</h2>
+            <h2 class="step-title" aria-label="Crush It">Crush It</h2>
           </hgroup>
-          <p class="step-description">
+          <p class="step-description" aria-label="Description for Step 4">
             Using our complimentary clubs or your own, take aim at the giant
             outfield targets and our high-tech balls will score themselves.
             While you're playing, order food and drinks and catch the game
             on the HDTVs in your bay.
           </p>
-          <aside class="app-info">
-            <h3 class="app-info-title">Download the Topgolf App</h3>
-            <p class="app-info-text">
+          <aside class="app-info" aria-label="Topgolf App information">
+            <h3 class="app-info-title" aria-label="Download the Topgolf App">Download the Topgolf App</h3>
+            <p class="app-info-text" aria-label="Description of Topgolf App">
               The free Topgolf App gives you access to game history, bay
               controls and much more.
               <a
@@ -499,7 +498,7 @@
             </p>
           </aside>
         </article>
-         <figure class="feature-media">
+         <figure class="feature-media" aria-label="Photo of guests celebrating in a bay at Topgolf">
           <img
             src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fnight%2Ftg-cpa-bay-night-adult-group-Kjfkehg.jpg&amp;fit=cover&amp;width=800&amp;height=450&amp;format=png"
             alt="Celebrating in a bay at Topgolf"
@@ -511,9 +510,9 @@
       </section>
 
       <!-- Event callout -->
-      <section class="section event-section has-dots-right">
-        <section class="event-callout">
-          <figure class="event-media">
+      <section class="section event-section has-dots-right" aria-label="Event callout section">
+        <section class="event-callout" aria-label="Event callout content">
+          <figure class="event-media" aria-label="Photo of guests enjoying Topgolf at night">
             <img
               src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fnight%2Ftg-cpa-bay-night-adult-group-ZRjz5tL.jpg&amp;fit=cover&amp;width=800&amp;height=450&amp;format=png"
               alt="Guests enjoying Topgolf at night"
@@ -522,11 +521,11 @@
               loading="lazy"
             />
           </figure>
-          <article class="event-content">
-            <h2 class="event-title">
-              Make Your Event More <strong class="event-title-accent">Eventful</strong>
+          <article class="event-content" aria-label="Event content: Make Your Event More Eventful">
+            <h2 class="event-title" aria-label="Make Your Event More Eventful">
+              Make Your Event More <strong class="event-title-accent" aria-label="Eventful">Eventful</strong>
             </h2>
-            <p class="event-text">
+            <p class="event-text" aria-label="Description of event callout">
               Rain or shine, day or night, make your next party or group
               event more eventful at Topgolf. We offer versatile event
               catering packages perfect for your next birthday party,
@@ -536,178 +535,174 @@
               class="btn btn-light"
               target="_blank"
               href=""
-             
-              >Parties &amp; Events</a
-            >
+              aria-label="See parties and events options"
+              >Parties &amp; Events</a>
           </article>
         </section>
       </section>
     </main>
 
-    <footer class="site-footer" aria-labelledby="footer-heading">
-      <nav class="footer-columns" aria-label="Footer navigation">
-        <ul class="footer-links">
-          <li>
+    <footer class="site-footer" aria-labelledby="footer-heading" aria-label="Site footer with navigation and company info">
+      <nav class="footer-columns" aria-label="Footer navigation menu">
+        <ul class="footer-links" aria-label="Footer main links">
+          <li aria-label="Gift Cards link">
             <a
               href=""
               target="_blank"
               class="footer-link"
-              >Gift Cards</a
-            >
+              aria-label="Gift Cards"
+              >Gift Cards</a>
           </li>
-          <li>
+          <li aria-label="Memberships link">
             <a
               href=""
               target="_blank"
               class="footer-link"
-              >Memberships</a
-            >
+              aria-label="Memberships"
+              >Memberships</a>
           </li>
-          <li>
+          <li aria-label="Golf Lessons link">
             <a
               href=""
               target="_blank"
               class="footer-link"
-              >Golf Lessons</a
-            >
+              aria-label="Golf Lessons"
+              >Golf Lessons</a>
           </li>
-          <li>
+          <li aria-label="Find a Location link">
             <a
               href=""
               target="_blank"
               class="footer-link"
-              >Find a Location</a
-            >
+              aria-label="Find a Location"
+              >Find a Location</a>
           </li>
-          <li>
+          <li aria-label="Contact Us link">
             <a
               href=""
               target="_blank"
               class="footer-link"
-              >Contact Us</a
-            >
+              aria-label="Contact Us"
+              >Contact Us</a>
           </li>
-          <li>
+          <li aria-label="Careers link">
             <a
               href=""
               target="_blank"
               class="footer-link"
-              >Careers</a
-            >
+              aria-label="Careers"
+              >Careers</a>
           </li>
         </ul>
-        <section class="footer-legal">
-          <h3 class="footer-heading">Legal Stuff</h3>
-          <ul class="footer-list">
-            <li>
+        <section class="footer-legal" aria-label="Legal information">
+          <h3 class="footer-heading" aria-label="Legal Stuff">Legal Stuff</h3>
+          <ul class="footer-list" aria-label="Legal links">
+            <li aria-label="Terms and Conditions link">
               <a
                 href=""
                 target="_blank"
                 class="footer-link"
-                >Terms &amp; Conditions</a
-              >
+                aria-label="Terms and Conditions"
+                >Terms &amp; Conditions</a>
             </li>
-            <li>
+            <li aria-label="Web Accessibility link">
               <a
                 href=""
                 target="_blank"
                 class="footer-link"
-                >Web Accessibility</a
-              >
+                aria-label="Web Accessibility"
+                >Web Accessibility</a>
             </li>
-            <li>
+            <li aria-label="Scam Awareness link">
               <a
                 href=""
                 target="_blank"
                 class="footer-link"
-                >Scam Awareness</a
-              >
+                aria-label="Scam Awareness"
+                >Scam Awareness</a>
             </li>
-            <li>
+            <li aria-label="Climate Disclosure link">
               <a
                 href=""
                 target="_blank"
                 class="footer-link"
-                >Climate Disclosure</a
-              >
+                aria-label="Climate Disclosure"
+                >Climate Disclosure</a>
             </li>
-            <li>
+            <li aria-label="Privacy, Ad and Cookie Policies link">
               <a
                 href=""
                 target="_blank"
                 class="footer-link"
-                >Privacy, Ad &amp; Cookie Policies</a
-              >
+                aria-label="Privacy, Ad and Cookie Policies"
+                >Privacy, Ad &amp; Cookie Policies</a>
             </li>
-            <li>
+            <li aria-label="Your Privacy Choices link">
               <a
                 href=""
                 target="_blank"
                 class="footer-link"
-                >Your Privacy Choices</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section class="footer-company">
-          <h3 class="footer-heading">Company</h3>
-          <ul class="footer-list">
-            <li>
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                >Driving for Good</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                >International</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                >Leadership</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-               
-                >Conduct &amp; Safety</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-               
-                >Press Room</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-               
-                >For Vendors</a
-              >
+                aria-label="Your Privacy Choices"
+                >Your Privacy Choices</a>
             </li>
           </ul>
         </section>
-        <section class="footer-subscribe">
-          <h3 class="footer-heading">Sign up for offers + updates</h3>
-          <p class="footer-subscribe-text">
+        <section class="footer-company" aria-label="Company information">
+          <h3 class="footer-heading" aria-label="Company">Company</h3>
+          <ul class="footer-list" aria-label="Company links">
+            <li aria-label="Driving for Good link">
+              <a
+                href=""
+                target="_blank"
+                class="footer-link"
+                aria-label="Driving for Good"
+                >Driving for Good</a>
+            </li>
+            <li aria-label="International link">
+              <a
+                href=""
+                target="_blank"
+                class="footer-link"
+                aria-label="International"
+                >International</a>
+            </li>
+            <li aria-label="Leadership link">
+              <a
+                href=""
+                target="_blank"
+                class="footer-link"
+                aria-label="Leadership"
+                >Leadership</a>
+            </li>
+            <li aria-label="Conduct and Safety link">
+              <a
+                href=""
+                target="_blank"
+                class="footer-link"
+                aria-label="Conduct and Safety"
+                >Conduct &amp; Safety</a>
+            </li>
+            <li aria-label="Press Room link">
+              <a
+                href=""
+                target="_blank"
+                class="footer-link"
+                aria-label="Press Room"
+                >Press Room</a>
+            </li>
+            <li aria-label="For Vendors link">
+              <a
+                href=""
+                target="_blank"
+                class="footer-link"
+                aria-label="For Vendors"
+                >For Vendors</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-subscribe" aria-label="Subscribe for offers and updates">
+          <h3 class="footer-heading" aria-label="Sign up for offers and updates">Sign up for offers + updates</h3>
+          <p class="footer-subscribe-text" aria-label="Subscribe to email and text updates">
             Yes, another email signup thingy in a website footer. But our
             email and text updates are ones you'll
             <small class="nowrap">actually read.</small>
@@ -716,42 +711,44 @@
             class="btn btn-light"
             href=""
             target="_blank"
-           
-            >Subscribe</a
-          >
+            aria-label="Subscribe to email and text updates"
+            >Subscribe</a>
         </section>
       </nav>
-      <nav class="footer-logos-nav" aria-label="Brand links">
-        <ul class="footer-logos-list">
-          <li>
-            <a href="" class="teg-logo">
+      <nav class="footer-logos-nav" aria-label="Brand links navigation">
+        <ul class="footer-logos-list" aria-label="Brand logo links">
+          <li aria-label="Topgolf logo link">
+            <a href="" class="teg-logo" aria-label="Topgolf logo">
               <img
                 src="./assets/logo-TG-wordmark-white.svg"
-                alt="Topgolf Logo" />
+                alt="Topgolf Logo"
+                aria-label="Topgolf logo image" />
             </a>
           </li>
-          <li>
+          <li aria-label="Toptracer logo link">
             <a
               href=""
               target="_blank"
               class="teg-logo"
               rel="noreferrer"
-             
+              aria-label="Toptracer logo"
               ><img
                 src="./assets/logo-TT-white.svg"
-                alt="Toptracer Logo" /></a>
+                alt="Toptracer Logo"
+                aria-label="Toptracer logo image" /></a>
           </li>
-          <li>
-            <a href="" class="teg-logo">
+          <li aria-label="Topgolf Swing Suite logo link">
+            <a href="" class="teg-logo" aria-label="Topgolf Swing Suite logo">
               <img
                 src="./assets/teg-ss-logo-registered-vertical-tab-alt-white.svg"
-                alt="Topgolf Swing Suite Logo" />
+                alt="Topgolf Swing Suite Logo"
+                aria-label="Topgolf Swing Suite logo image" />
             </a>
           </li>
         </ul>
-        <small class="footer-meta">
-          <p class="footer-meta-line">©2026 Topgolf International, Inc.</p>
-          <p class="footer-meta-line">All rights reserved.</p>
+        <small class="footer-meta" aria-label="Footer copyright">
+          <p class="footer-meta-line" aria-label="Copyright 2026 Topgolf International, Inc.">©2026 Topgolf International, Inc.</p>
+          <p class="footer-meta-line" aria-label="All rights reserved.">All rights reserved.</p>
         </small>
       </nav>
     </footer>
