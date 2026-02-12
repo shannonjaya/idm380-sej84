@@ -182,14 +182,16 @@ picture {
   }
 
   .faq-card, .card{
+    color: var(--neutral-black);
     background-color: #f1f9ff16;
   }
+
   .faq-icon {
     color: #f1f9ffe2;
   }
 
   a.highlighted-link {
-    color: var(--primary-light);
+    color: var(--primary-dark);
     border-bottom: 2px solid var(--tertiary-light);
   }
   a.highlighted-link:hover,
