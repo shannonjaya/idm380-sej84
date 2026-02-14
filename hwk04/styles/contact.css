@@ -1,0 +1,239 @@
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* HERO SECTION */
+#contact-hero {
+  position: relative;
+  background-color: var(--primary-dark);
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  padding: calc(var(--rhythm) * 2);
+}
+
+h1#contact-page-title {
+  text-align: left;
+  width: fit-content;
+  font-size: var(--font-xlarge);
+  color: var(--neutral-white);
+  margin-bottom: var(--rhythm);
+  margin-top: 0;
+  line-height: var(--line-height-tight);
+}
+
+h1#contact-page-title:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 50px;
+  background-color: var(--secondary-mid);
+  margin-top: 0.5rem;
+}
+
+#contact-hero p {
+  color: var(--neutral-white);
+  margin: 0;
+  max-width: 50ch;
+}
+
+/* FORM SECTION */
+.form-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: var(--rhythm) calc(var(--rhythm) * 2);
+}
+
+/* CALLOUT BOX */
+.callout {
+  display: inline-block;
+  padding: calc(var(--rhythm) * 1);
+  margin: calc(var(--rhythm) * 2) 0;
+  color: var(--neutral-white);
+  background-color: var(--neutral-black);
+  border-radius: 4px;
+}
+
+.callout strong {
+  display: block;
+  font-size: var(--font-base);
+  text-transform: uppercase;
+  color: var(--secondary-mid);
+}
+
+.highlighted-link.white {
+  color: var(--neutral-white);
+  border-bottom: 2px solid var(--secondary-mid);
+}
+
+.highlighted-link.white:hover,
+.highlighted-link.white:focus {
+  color: var(--secondary-mid);
+  border-bottom: 2px solid var(--tertiary-light);
+}
+
+/* FORM GRID */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: calc(var(--rhythm) * 2);
+  align-items: center;
+  margin-bottom: calc(var(--rhythm) * 1.5);
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* FORM */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-section {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: var(--rhythm) auto;
+  margin-bottom: calc(var(--rhythm) * 5);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: var(--rhythm);
+  width: 100%;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+}
+
+.forms-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.form-label {
+  font-size: var(--font-small);
+  font-weight: 300;
+  text-transform: capitalize;
+  color: var(--primary-mid);
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.accent-red {
+  margin-left: 0.25rem;
+  color: #ff4d4d;
+}
+
+strong.validation-message {
+  color: var(--primary-mid);
+  text-transform: uppercase;
+  font-size: var(--font-small);
+  font-weight: 800;
+}
+
+input,
+textarea,
+select {
+  font-family: var(--font-sans);
+  padding: calc(var(--rhythm) * 1) calc(var(--rhythm) * 0.75);
+  font-size: var(--font-small);
+  border: 0.5px solid var(--primary-mid);
+  border-radius: 6px;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+}
+
+select {
+  appearance: none;
+  background-image: url("https://s3.topgolf.com/uploads/icons/down-arrow-circle-cobalt.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(var(--rhythm) * 0.5) center;
+  background-size: 20px 20px;
+  padding-right: calc(var(--rhythm) * 1.5);
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: var(--focus-outline-width) solid var(--secondary-mid);
+  outline-offset: var(--focus-outline-offset);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+label.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5rem;
+  padding: var(--rhythm) 0;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-disclaimer {
+  text-align: right;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: calc(var(--rhythm) * 1) 0;
+  margin-bottom: calc(var(--rhythm) * 2);
+}
+
+.radio-section {
+  margin: calc(var(--rhythm) * 2) 0;
+}
+.radio-group {
+  margin-top: var(--rhythm);
+  display: flex;
+  flex-direction: row;
+  gap: calc(var(--rhythm) * 2);
+}
+
+.radio-group label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+}

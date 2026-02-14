@@ -1,0 +1,218 @@
+/* MOBILE STYLES */
+
+@media (max-width: 767px) {
+  /* HEADER & NAV */
+  header.site-header {
+    padding: calc(var(--rhythm) * 1) !important;
+  }
+
+  nav.site-nav {
+    display: none !important;
+  }
+
+  .menu-links {
+    display: none !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav.location-bar.location-bar--mobile {
+    display: flex !important;
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+
+  nav.location-bar.location-bar--desktop {
+    display: none !important;
+  }
+
+  .nav-logo--shield {
+    display: inline-flex !important;
+    margin: 0;
+  }
+
+  .nav-logo--wordmark {
+    display: none !important;
+  }
+
+  .nav-toggle-label {
+    display: inline-flex;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* HOME PAGE - STEPS */
+  section.section--steps {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: calc(var(--rhythm) * 0.5) !important;
+  }
+
+  figure.feature-media {
+    order: -1;
+  }
+
+  .feature-content--reversed {
+    order: 0;
+  }
+
+  hgroup.step-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .step-description {
+    margin-top: calc(var(--rhythm) * -1);
+    padding: 0;
+  }
+
+  .step-badge,
+  .feature-content--reversed .step-badge {
+    transform: rotate(-4deg);
+    position: static;
+  }
+
+  /* HOME PAGE - FAQ */
+  section.faq-section {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  article.faq-card {
+    padding-inline: 1rem;
+    grid-column: auto;
+  }
+
+  /* HOME PAGE - CARDS */
+  article.card {
+    display: grid !important;
+    grid-template-columns: 40% 1fr;
+    gap: 1rem;
+    align-items: start;
+    align-content: start;
+  }
+
+  figure.card-image {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .button-group {
+    justify-content: center !important;
+  }
+
+  section.venue-info-section {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  article.card,
+  article.safety-card {
+    grid-column: auto;
+  }
+
+  aside.app-info {
+    max-width: 100%;
+  }
+
+  /* HOME PAGE - EVENT SECTION */
+  section.event-callout {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding-inline: 1rem;
+  }
+
+  figure.event-media {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  article.event-content {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    padding: 1rem;
+  }
+
+  /* GENERAL SECTIONS */
+  section.section {
+    padding-inline: 1rem;
+  }
+
+  /* FORM */
+  .form-content {
+    padding: var(--rhythm);
+  }
+
+  /* FOOTER */
+  footer.site-footer {
+    padding: calc(var(--rhythm) * 1) !important;
+  }
+
+  nav.footer-columns {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .footer-links {
+    grid-column: 1 / -1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  section.footer-legal,
+  section.footer-company,
+  section.footer-subscribe {
+    grid-column: 1 / -1 !important;
+  }
+
+  section.footer-subscribe {
+    margin-top: 2.5rem;
+  }
+
+  nav.footer-logos-nav {
+    flex-direction: column !important;
+    gap: var(--rhythm) !important;
+  }
+
+  small.footer-meta {
+    text-align: center;
+  }
+
+  .footer-meta-line {
+    display: block !important;
+  }
+}
+
+/* TABLET STYLES */
+@media (max-width: 1023px) {
+  section.event-callout {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding-inline: 1rem;
+  }
+
+  figure.event-media {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  article.event-content {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    padding: 2rem;
+  }
+}
