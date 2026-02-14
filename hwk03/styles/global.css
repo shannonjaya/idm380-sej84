@@ -4,6 +4,7 @@
   /* COLOR */
   --white: #fff;
   --black: #0d1117;
+  --light-gray: #c9d1d9;
   --dark-blue: #050786;
   --blue: #0004ff;
   --light-blue: #f1f9ff;
@@ -79,6 +80,12 @@ body {
   line-height: var(--line-height-normal);
   color: var(--foreground-color);
   background-color: var(--background-color);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--neutral-light);
+  margin: calc(var(--rhythm)*1.5) 0;
 }
 
 h1,
@@ -163,39 +170,4 @@ img {
 
 picture {
   overflow: hidden;
-}
-
-/* USER PREFERENCES */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-  }
-}
-
-/* DARK MODE */
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--neutral-white);
-    background-color: var(--neutral-black);
-  }
-
-  article.faq-card, article.card{
-    background-color: #f1f9ff16;
-  }
-
-  .faq-icon {
-    color: #f1f9ffe2;
-  }
-
-  a.highlighted-link {
-    color: var(--primary-light);
-    border-bottom: 2px solid var(--tertiary-light);
-  }
-  a.highlighted-link:hover,
-  a.highlighted-link:focus {
-    color: var(--secondary-mid);
-    border-bottom: 2px solid var(--tertiary-mid);
-  }
 }
