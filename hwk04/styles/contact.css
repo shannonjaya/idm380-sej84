@@ -220,7 +220,8 @@ textarea {
   margin-top: var(--rhythm);
   display: flex;
   flex-direction: row;
-  gap: calc(var(--rhythm) * 2);
+  column-gap: calc(var(--rhythm) * 2);
+  row-gap: calc(var(--rhythm) * 0.5);
   flex-wrap: wrap;
 }
 
