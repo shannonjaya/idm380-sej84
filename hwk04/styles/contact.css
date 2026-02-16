@@ -221,6 +221,7 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: calc(var(--rhythm) * 2);
+  flex-wrap: wrap;
 }
 
 .radio-group label {
