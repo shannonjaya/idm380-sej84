@@ -7,7 +7,7 @@
   text-transform: uppercase;
   border-radius: 9999px;
   border: none;
-  cursor: auto;
+  cursor: pointer;
   text-decoration: none;
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-normal);
@@ -27,6 +27,18 @@
 .btn-primary:focus {
   outline: var(--focus-outline-width) solid var(--primary-mid);
   outline-offset: var(--focus-outline-offset);
+}
+
+.btn-primary:disabled {
+  background-color: #d4d4d4;
+  color: rgb(51, 51, 51);
+  cursor: default;
+  opacity: 0.6;
+}
+
+.btn-primary:disabled:hover {
+  background-color: #d4d4d4;
+  color: rgb(51, 51, 51);
 }
 
 .btn-secondary {
@@ -496,4 +508,5 @@ small.footer-meta {
   display: inline-block;
   margin-inline-end: 0.5rem;
 }
+
 

@@ -277,7 +277,7 @@
               <legend class="form-label">
                 Location<small class="accent-red">*</small>
               </legend>
-              <select name="location" id="venue" aria-label="Select a Topgolf venue location">
+              <select name="location" id="venue" aria-label="Select a Topgolf venue location" aria-required="true">
                 <option value="0">Choose Venue</option>
                 <option value="29135">
                   AL<!-- -->
@@ -790,7 +790,7 @@
               <legend class="form-label">
                 Subject<small class="accent-red">*</small>
               </legend>
-              <select name="subject" aria-label="Select contact form subject">
+              <select name="subject" aria-label="Select contact form subject" aria-required="true">
                 <option value="">Please Select</option>
                 <option value="recent">Recent Topgolf Experience</option>
                 <option value="app">App</option>
@@ -816,13 +816,13 @@
               <legend class="form-label">
                 First Name<small class="accent-red">*</small>
               </legend>
-              <input name="firstName" aria-label="Enter your first name" required />
+              <input name="firstName" aria-label="Enter your first name" required aria-required="true" />
             </label>
             <label aria-label="Last name input field">
               <legend class="form-label">
                 Last Name<small class="accent-red">*</small>
               </legend>
-              <input name="lastName" aria-label="Enter your last name" required />
+              <input name="lastName" aria-label="Enter your last name" required aria-required="true" />
             </label>
           </fieldset>
           <fieldset class="form-grid" aria-label="Email and phone contact fieldset">
@@ -830,7 +830,7 @@
               <legend class="form-label">
                 Email<small class="accent-red">*</small>
               </legend>
-              <input name="email" type="email" aria-label="Enter your email address" required />
+              <input name="email" type="email" aria-label="Enter your email address" required aria-required="true" />
             </label>
             <label aria-label="Phone number input field">
               <legend class="form-label">Phone</legend>
@@ -838,7 +838,7 @@
             </label>
           </fieldset>
           <section class="radio-section" aria-label="Preferred contact method selection">
-            <legend class="form-label" aria-label="How would you prefer to be contacted">Preferred Contact Method*</legend>
+            <legend class="form-label" aria-label="How would you prefer to be contacted">Preferred Contact Method<small class="accent-red">*</small></legend>
             <fieldset class="radio-group" aria-label="Contact preference radio button options">
               <label aria-label="Email contact preference">
                 <input
@@ -847,15 +847,16 @@
                   value="email"
                   aria-label="Prefer email contact"
                   required
+                  aria-required="true"
                 />
                 Email
               </label>
               <label aria-label="Phone contact preference">
-                <input type="radio" name="contact-method" value="phone" aria-label="Prefer phone contact" />
+                <input type="radio" name="contact-method" value="phone" aria-label="Prefer phone contact" aria-required="true" />
                 Phone
               </label>
               <label aria-label="Either email or phone contact preference">
-                <input type="radio" name="contact-method" value="either" aria-label="Prefer either email or phone contact" />
+                <input type="radio" name="contact-method" value="either" aria-label="Prefer either email or phone contact" aria-required="true" />
                 Either
               </label>
             </fieldset>
@@ -864,7 +865,7 @@
             <legend class="form-label">
               Message<small class="accent-red">*</small>
             </legend>
-            <textarea name="message" aria-label="Enter your message or inquiry" required=""></textarea>
+            <textarea name="message" aria-label="Enter your message or inquiry" required="" aria-required="true"></textarea>
           </label>
           <label class="checkbox" aria-label="Consent agreement checkbox">
             <input type="checkbox" name="consent" aria-label="I consent to Topgolf storing my information to respond to my inquiry" />
@@ -880,14 +881,14 @@
           <section class="button-wrapper" tabindex="0" aria-label="Form submission button and required field information">
             <button
               class="btn btn-primary"
-              style="height: 50px; padding-left: 2rem; padding-right: 2rem"
+              style="height: 50px; padding-left: 2rem; padding-right: 2rem;"
               type="submit"
-              disabled=""
+              disabled
               aria-label="Submit the contact form"
             >
               Submit
             </button>
-            <small class="form-disclaimer" aria-label="Asterisk indicates required fields">* = required fields</small>
+            <small class="form-disclaimer" aria-label="Asterisk indicates required fields"><small class="accent-red">*</small> = required fields</small>
           </section>
         </form>
         <address aria-label="Topgolf corporate headquarters address">

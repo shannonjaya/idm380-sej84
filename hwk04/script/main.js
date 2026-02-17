@@ -29,9 +29,48 @@ function preventEmptyLinkNavigation() {
   });
 }
 
+function submitForm() {
+  const form = document.querySelector('form');
+  if (!form) return;
+
+  const submitBtn = document.querySelector('button[type="submit"]');
+  const inputs = form.querySelectorAll('input, select, textarea');
+
+  const checkFormValid = () => {
+    const location = form.querySelector('select[name="location"]').value !== '0';
+    const subject = form.querySelector('select[name="subject"]').value !== '';
+    const firstName = form.querySelector('input[name="firstName"]').value.trim() !== '';
+    const lastName = form.querySelector('input[name="lastName"]').value.trim() !== '';
+    const email = form.querySelector('input[name="email"]').value.trim() !== '';
+    const contactMethod = form.querySelector('input[name="contact-method"]:checked') !== null;
+    const message = form.querySelector('textarea[name="message"]').value.trim() !== '';
+    const consent = form.querySelector('input[name="consent"]').checked;
+
+    const isValid = location && subject && firstName && lastName && email && contactMethod && message && consent;
+    submitBtn.disabled = !isValid;
+  };
+
+  inputs.forEach(input => {
+    input.addEventListener('change', checkFormValid);
+    input.addEventListener('input', checkFormValid);
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!submitBtn.disabled) {
+      alert('Thank you for contacting Topgolf!');
+      form.reset();
+      checkFormValid();
+    }
+  });
+
+  checkFormValid();
+}
+
 function initialize() {
   formatPhoneInput();
   preventEmptyLinkNavigation();
+  submitForm();
 }
 
 
