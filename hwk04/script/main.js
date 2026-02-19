@@ -33,7 +33,7 @@ function submitForm() {
   const form = document.querySelector('form');
   if (!form) return;
 
-  const submitBtn = document.querySelector('button[type="submit"]');
+  const submitBtn = document.querySelector('#submit-btn');
   const inputs = form.querySelectorAll('input, select, textarea');
 
   const checkFormValid = () => {
@@ -47,7 +47,12 @@ function submitForm() {
     const consent = form.querySelector('input[name="consent"]').checked;
 
     const isValid = location && subject && firstName && lastName && email && contactMethod && message && consent;
-    submitBtn.disabled = !isValid;
+    
+    if (isValid) {
+      submitBtn.classList.remove('btn-disabled');
+    } else {
+      submitBtn.classList.add('btn-disabled');
+    }
   };
 
   inputs.forEach(input => {
@@ -56,8 +61,10 @@ function submitForm() {
   });
 
   form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (!submitBtn.disabled) {
+    if (submitBtn.classList.contains('btn-disabled')) {
+      e.preventDefault();
+    } else {
+      e.preventDefault();
       alert('Thank you for contacting Topgolf!');
       form.reset();
       checkFormValid();

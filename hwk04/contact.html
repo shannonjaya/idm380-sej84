@@ -878,12 +878,13 @@
           <strong class="validation-message" aria-live="assertive" aria-label="Form validation error message">
             Please select a message subject.
           </strong>
-          <section class="button-wrapper" tabindex="0" aria-label="Form submission button and required field information">
+          <section class="button-wrapper" aria-label="Form submission button and required field information">
             <button
-              class="btn btn-primary"
+              tabindex="0"
+              id="submit-btn"
+              class="btn btn-primary btn-disabled"
               style="height: 50px; padding-left: 2rem; padding-right: 2rem;"
               type="submit"
-              disabled
               aria-label="Submit the contact form"
             >
               Submit
