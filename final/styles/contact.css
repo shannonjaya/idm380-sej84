@@ -28,8 +28,7 @@ h1#contact-page-title {
   color: var(--neutral-white);
   margin-bottom: var(--rhythm);
   margin-top: 0;
-  line-height: var(--line-height-tight);
-  word-break: break-all;
+  line-height: calc(var(--line-height-tight)*0.75);
 }
 
 h1#contact-page-title:after {
