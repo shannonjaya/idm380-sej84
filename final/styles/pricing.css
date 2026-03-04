@@ -15,7 +15,7 @@ main {
   padding: calc(var(--rhythm) * 2);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   #pricing-hero {
     padding: calc(var(--rhythm) * 1);
   }

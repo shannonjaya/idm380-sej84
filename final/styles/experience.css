@@ -1,0 +1,318 @@
+/* STEP SECTIONS */
+section.section--steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--rhythm);
+  margin: var(--rhythm) auto;
+  padding: calc(var(--rhythm)*2);
+  max-width: 90rem;
+}
+
+hgroup.step-heading {
+  display: inline-block;
+  align-items: center;
+  width: fit-content;
+  position: relative;
+}
+
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--rhythm) * 0.5);
+  padding: 0 calc(var(--rhythm) * 0.5);
+  background-color: var(--secondary-mid);
+  color: var(--primary-dark);
+  text-transform: uppercase;
+  font-size: var(--font-medium);
+  line-height: var(--line-height-tight);
+  transform: translateX(-100%) rotate(-10deg);
+  position: absolute;
+  top: -1.5rem;
+  left: 0.5rem;
+  width: fit-content;
+}
+
+.feature-content--reversed .step-badge {
+  top: -1.5rem;
+  right: 0.5rem;
+  left: auto;
+  transform: translateX(100%) rotate(-8deg);
+}
+
+.step-badge-label {
+  font-family: var(--font-semi-condensed);
+  font-weight: 300;
+}
+
+.step-badge-num {
+  font-family: var(--font-sans);
+  font-weight: 800;
+}
+
+.step-title {
+  display: inline-block;
+  width: fit-content;
+  padding: calc(var(--rhythm) * 0.25) calc(var(--rhythm) * 0.5);
+  background-color: var(--primary-dark);
+  color: var(--secondary-mid);
+  letter-spacing: calc(var(--letter-spacing-wide) * 0.25);
+  line-height: var(--line-height-tight);
+  font-size: var(--font-large);
+  margin: 0;
+}
+
+.step-description {
+  margin: var(--rhythm) 0;
+  padding: calc(var(--rhythm) * 0.5) var(--rhythm);
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* MEDIA */
+figure.feature-media {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+article.feature-content {
+  position: relative;
+}
+
+/* FAQ SECTION */
+section.faq-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin: var(--rhythm) auto;
+  max-width: 90rem;
+  grid-column: 1 / -1;
+}
+
+article.faq-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #f1f9ff;
+  grid-column: span 2;
+}
+
+.faq-icon {
+  position: absolute;
+  top: -4rem;
+  right: -0.75rem;
+  opacity: 0.1;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 9rem;
+  color: var(--primary-mid);
+}
+
+.faq-title {
+  margin: 0 0 0.5rem 0;
+  font-size: var(--font-base);
+  font-family: var(--font-serif);
+  text-transform: none;
+  line-height: var(--line-height-tight);
+}
+
+.faq-text {
+  margin: 0;
+  font-size: var(--font-small);
+  line-height: 1.4;
+}
+
+/* CARD GRID */
+section.venue-info-section {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--rhythm);
+  margin: var(--rhythm) auto;
+  max-width: 90rem;
+  grid-column: 1 / -1;
+}
+
+article.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  background-color: var(--light-blue);
+  grid-column: span 2;
+}
+
+.card-title {
+  font-size: var(--font-base);
+  font-family: var(--font-semibold);
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.card-text {
+  margin: 0;
+  font-size: var(--font-small);
+  line-height: 1.4;
+}
+
+figure.card-image {
+  width: auto;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  margin: 0;
+}
+
+/* SAFETY CARD */
+article.safety-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--rhythm);
+  overflow: hidden;
+  text-align: center;
+  color: var(--neutral-white);
+  background-color: var(--primary-dark);
+  border-radius: 0.375rem;
+  grid-column: span 2;
+}
+
+.safety-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.safety-icon {
+  font-size: 4.5rem;
+}
+
+.safety-title {
+  font-size: var(--font-base);
+  font-family: var(--font-semibold);
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.safety-text {
+  margin: 0;
+  font-size: var(--font-small);
+  line-height: 1.4;
+}
+
+.safety-text a {
+  font-weight: var(--font-weight-bold);
+  border-bottom: 2px solid var(--tertiary-mid);
+  color: var(--neutral-white);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.safety-text a:hover {
+  color: var(--secondary-mid);
+  border-color: var(--tertiary-light);
+}
+
+/* APP INFO */
+aside.app-info {
+  border: 2px solid var(--secondary-mid);
+  border-radius: 0.5rem;
+  padding: var(--rhythm);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rhythm);
+  max-width: 100%;
+}
+
+.app-info-title {
+  font-size: var(--font-base);
+  font-family: var(--font-semibold);
+  margin: 0 0 0.25rem 0;
+}
+
+.app-info-text {
+  margin: 0;
+  font-size: var(--font-small);
+  line-height: 1.4;
+}
+
+/* EVENT SECTION */
+section.event-section {
+  padding: 0;
+}
+
+section.event-callout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  margin: var(--rhythm) auto;
+  padding: calc(var(--rhythm) * 2);
+  max-width: 90rem;
+}
+
+figure.event-media {
+  grid-column: 1 / span 9;
+  grid-row: 1;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin: 0;
+}
+
+.event-media img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-position: center 75%;
+}
+
+article.event-content {
+  grid-column: 8 / span 5;
+  grid-row: 1;
+  position: relative;
+  z-index: 10;
+  align-self: center;
+  background-color: var(--primary-dark);
+  color: var(--neutral-white);
+  padding: 4rem;
+  margin: 0;
+}
+
+.event-title {
+  margin-block: 0 1rem;
+  font-size: var(--font-large);
+  line-height: 1;
+  color: var(--neutral-white);
+}
+
+.event-title-break {
+  display: block;
+}
+
+.event-title-accent {
+  color: var(--secondary-mid);
+  font-weight: var(--font-weight-bold);
+}
+
+.event-text {
+  margin: 0 0 var(--rhythm) 0;
+}
