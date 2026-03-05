@@ -182,6 +182,7 @@ nav.site-nav {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 10000;
 }
 
 .nav-logo-link svg path,
