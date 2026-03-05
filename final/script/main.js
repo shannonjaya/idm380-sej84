@@ -1,3 +1,23 @@
+function initializeHamburgerMenu() {
+  const toggle = document.getElementById('nav-toggle');
+  const toggleBtn = document.getElementById('nav-toggle-btn');
+  
+  if (toggleBtn && toggle) {
+    toggleBtn.addEventListener('click', () => {
+      toggle.checked = !toggle.checked;
+      toggleBtn.setAttribute('aria-expanded', toggle.checked);
+    });
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.checked = false;
+        toggleBtn.setAttribute('aria-expanded', false);
+      });
+    });
+  }
+}
+
 function formatPhoneInput() {
   const phoneInput = document.getElementById('phone');
   if (phoneInput) {
@@ -15,18 +35,6 @@ function formatPhoneInput() {
       e.target.value = value;
     });
   }
-}
-
-
-function preventEmptyLinkNavigation() {
-  document.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') {
-      const href = e.target.getAttribute('href');
-      if (href === '' || href === '#') {
-        e.preventDefault();
-      }
-    }
-  });
 }
 
 function submitForm() {
@@ -75,8 +83,8 @@ function submitForm() {
 }
 
 function initialize() {
+  initializeHamburgerMenu();
   formatPhoneInput();
-  preventEmptyLinkNavigation();
   submitForm();
 }
 

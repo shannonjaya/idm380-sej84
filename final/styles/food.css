@@ -58,7 +58,6 @@ h1#fnb-page-title:after {
 @media (max-width: 768px) {
   .hero-section {
     padding: calc(var(--rhythm) * 2) var(--rhythm);
-    max-height: 50vh;
   }
 
   .hero-section > p {
@@ -125,13 +124,7 @@ h1#fnb-page-title:after {
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 0;
-}
-
-.food-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .food-item img {

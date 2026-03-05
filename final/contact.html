@@ -36,20 +36,6 @@
       class="site-header"
       aria-label="Site header with logo and navigation"
     >
-      <input
-        type="checkbox"
-        id="nav-toggle"
-        class="nav-toggle"
-        aria-label="Toggle main navigation menu"
-      />
-
-      <label
-        for="nav-toggle"
-        class="nav-toggle-label"
-        aria-label="Menu toggle button"
-        tabindex="0"
-      >
-      </label>
 
       <a class="nav-logo-link" href="index.html" aria-label="Topgolf home page link">
         <figure
@@ -179,7 +165,22 @@
         </figure>
       </a>
 
-      <nav class="site-nav" aria-label="Primary site navigation menu">
+      <button
+        id="nav-toggle-btn"
+        class="nav-toggle-btn"
+        aria-label="Toggle main navigation menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      ></button>
+
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-hidden="true"
+      />
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary site navigation menu">
         <ul class="menu-links" aria-label="Main navigation links">
           <li aria-label="Topgolf Experience navigation item">
             <a
@@ -219,45 +220,6 @@
           </li>
         </ul>
       </nav>
-
-      <nav
-        class="location-bar location-bar--mobile"
-        aria-hidden="false"
-        aria-label="Mobile call to action navigation"
-      >
-        <a
-          id="nav-btn-pav-global"
-          target="_blank"
-          class="btn btn-light"
-          href=""
-          aria-label="Book a bay at Topgolf"
-          >Book a Bay</a
-        >
-        <a
-          id="nav-btn-event"
-          target="_blank"
-          class="btn btn-secondary"
-          href=""
-          aria-label="Plan an event at Topgolf"
-          >Plan an Event</a
-        >
-      </nav>
-
-      <nav
-        class="location-bar location-bar--desktop"
-        aria-hidden="false"
-        aria-label="Desktop find location navigation"
-      >
-        <a
-          href=""
-          id="nav-link-find-location"
-          target="_blank"
-          class="nav-link"
-          aria-label="Find a Topgolf location"
-        >
-          Find a Topgolf
-        </a>
-      </nav>
     </header>
 
     <main id="content">
@@ -271,11 +233,8 @@
       <section class="form-content" tabindex="0" aria-label="Contact form section with location, subject, personal details and message fields">
         <aside class="callout" aria-label="Group rates promotion callout">
           <strong aria-label="Group Rates promotional heading">Group Rates</strong>Interested in booking your group, party or
-          event at Topgolf?<!-- -->
-          <a class="highlighted-link white" href=""
-            >Fill out our event info request form</a
-          >
-          <!-- -->to learn more!
+          event at Topgolf? Contact us below!
+
         </aside>
         <form aria-label="Contact form with required fields">
           <fieldset class="form-grid" aria-label="Venue and subject selection fieldset">
@@ -902,278 +861,15 @@
           <strong aria-label="Topgolf Home Office address heading">Topgolf Home Office</strong><br />8750 N. Central Expressway,
           Suite 1200<br />Dallas, TX 75231
         </address>
-        <p aria-label="Media and press inquiry information and link">
-          For <strong aria-label="Media and Press Inquiries section">Media/Press Inquiries</strong>, visit our<!-- -->
-          <a
-            class="highlighted-link"
-            href=""
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Visit Topgolf press room"
-            >Press Room</a
-          >.
-        </p>
-        <p aria-label="International inquiry information and link">
-          For
-          <strong aria-label="International Inquiries section">International Inquiries</strong>,<!-- -->
-          <a href="" class="highlighted-link" aria-label="Information for international inquiries">click here.</a>
-        </p>
       </section>
     </main>
 
-    <footer
+     <footer
       class="site-footer"
       aria-labelledby="footer-heading"
-      aria-label="Site footer with navigation and company info"
+      aria-label="Site footer"
     >
-      <a
-        href="#content"
-        class="skip-nav-link skip-footer"
-        aria-label="Skip footer"
-        >Skip Footer</a
-      >
-      <nav class="footer-columns" aria-label="Footer navigation menu">
-        <ul class="footer-links" aria-label="Footer main links">
-          <li aria-label="Gift Cards link">
-            <a
-              href=""
-              target="_blank"
-              class="footer-link"
-              aria-label="Gift Cards"
-              >Gift Cards</a
-            >
-          </li>
-          <li aria-label="Memberships link">
-            <a
-              href=""
-              target="_blank"
-              class="footer-link"
-              aria-label="Memberships"
-              >Memberships</a
-            >
-          </li>
-          <li aria-label="Golf Lessons link">
-            <a
-              href=""
-              target="_blank"
-              class="footer-link"
-              aria-label="Golf Lessons"
-              >Golf Lessons</a
-            >
-          </li>
-          <li aria-label="Find a Location link">
-            <a
-              href=""
-              target="_blank"
-              class="footer-link"
-              aria-label="Find a Location"
-              >Find a Location</a
-            >
-          </li>
-          <li aria-label="Contact Us link">
-            <a
-              href=""
-              target="_blank"
-              class="footer-link"
-              aria-label="Contact Us"
-              >Contact Us</a
-            >
-          </li>
-          <li aria-label="Careers link">
-            <a href="" target="_blank" class="footer-link" aria-label="Careers"
-              >Careers</a
-            >
-          </li>
-        </ul>
-        <section
-          class="footer-legal"
-          tabindex="0"
-          aria-label="Legal information"
-        >
-          <h3 class="footer-heading" aria-label="Legal Stuff">Legal Stuff</h3>
-          <ul class="footer-list" aria-label="Legal links">
-            <li aria-label="Terms and Conditions link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Terms and Conditions"
-                >Terms &amp; Conditions</a
-              >
-            </li>
-            <li aria-label="Web Accessibility link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Web Accessibility"
-                >Web Accessibility</a
-              >
-            </li>
-            <li aria-label="Scam Awareness link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Scam Awareness"
-                >Scam Awareness</a
-              >
-            </li>
-            <li aria-label="Climate Disclosure link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Climate Disclosure"
-                >Climate Disclosure</a
-              >
-            </li>
-            <li aria-label="Privacy, Ad and Cookie Policies link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Privacy, Ad and Cookie Policies"
-                >Privacy, Ad &amp; Cookie Policies</a
-              >
-            </li>
-            <li aria-label="Your Privacy Choices link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Your Privacy Choices"
-                >Your Privacy Choices</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section
-          class="footer-company"
-          tabindex="0"
-          aria-label="Company information"
-        >
-          <h3 class="footer-heading" aria-label="Company">Company</h3>
-          <ul class="footer-list" aria-label="Company links">
-            <li aria-label="Driving for Good link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Driving for Good"
-                >Driving for Good</a
-              >
-            </li>
-            <li aria-label="International link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="International"
-                >International</a
-              >
-            </li>
-            <li aria-label="Leadership link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Leadership"
-                >Leadership</a
-              >
-            </li>
-            <li aria-label="Conduct and Safety link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Conduct and Safety"
-                >Conduct &amp; Safety</a
-              >
-            </li>
-            <li aria-label="Press Room link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="Press Room"
-                >Press Room</a
-              >
-            </li>
-            <li aria-label="For Vendors link">
-              <a
-                href=""
-                target="_blank"
-                class="footer-link"
-                aria-label="For Vendors"
-                >For Vendors</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section
-          class="footer-subscribe"
-          tabindex="0"
-          aria-label="Subscribe for offers and updates"
-        >
-          <h3
-            class="footer-heading"
-            aria-label="Sign up for offers and updates"
-          >
-            Sign up for offers + updates
-          </h3>
-          <p
-            class="footer-subscribe-text"
-            aria-label="Subscribe to email and text updates"
-          >
-            Yes, another email signup thingy in a website footer. But our email
-            and text updates are ones you'll
-            <small class="nowrap">actually read.</small>
-          </p>
-          <a
-            class="btn btn-light"
-            href=""
-            target="_blank"
-            aria-label="Subscribe to email and text updates"
-            >Subscribe</a
-          >
-        </section>
-      </nav>
-      <nav class="footer-logos-nav" aria-label="Brand links navigation">
-        <ul class="footer-logos-list" aria-label="Brand logo links">
-          <li aria-label="Topgolf logo link">
-            <a href="" class="teg-logo" aria-label="Topgolf logo">
-              <img
-                src="./assets/logo-TG-wordmark-white.svg"
-                alt="Topgolf Logo"
-                aria-label="Topgolf logo image"
-              />
-            </a>
-          </li>
-          <li aria-label="Toptracer logo link">
-            <a
-              href=""
-              target="_blank"
-              class="teg-logo"
-              rel="noreferrer"
-              aria-label="Toptracer logo"
-              ><img
-                src="./assets/logo-TT-white.svg"
-                alt="Toptracer Logo"
-                aria-label="Toptracer logo image"
-            /></a>
-          </li>
-          <li aria-label="Topgolf Swing Suite logo link">
-            <a href="" class="teg-logo" aria-label="Topgolf Swing Suite logo">
-              <img
-                src="./assets/teg-ss-logo-registered-vertical-tab-alt-white.svg"
-                alt="Topgolf Swing Suite Logo"
-                aria-label="Topgolf Swing Suite logo image"
-              />
-            </a>
-          </li>
-        </ul>
-        <small class="footer-meta" aria-label="Footer copyright">
+       <small class="footer-meta" aria-label="Footer copyright">
           <p
             class="footer-meta-line"
             aria-label="Copyright 2026 Topgolf International, Inc."
@@ -1184,7 +880,6 @@
             All rights reserved.
           </p>
         </small>
-      </nav>
     </footer>
 
     <script src="script/main.js"></script>
