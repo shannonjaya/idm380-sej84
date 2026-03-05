@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pricing</title>
+    <title>Topgolf</title>
     <link rel="icon" href="https://topgolf.com/favicon.ico" sizes="48x48" />
     <link
       rel="icon"
@@ -17,17 +17,16 @@
     />
     <style>
       @font-face {
-        font-family: 'Open Dyslexic';
-        src: url('assets/fonts/OpenDyslexic-Regular.otf') format('opentype');
+        font-family: "Open Dyslexic";
+        src: url("assets/fonts/OpenDyslexic-Regular.otf") format("opentype");
         font-weight: normal;
       }
     </style>
+    <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/components.css" />
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
-    <link rel="stylesheet" href="styles/pricing.css" />
-    <link rel="stylesheet" href="styles/user-pref.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/user-pref.css" />
   </head>
   <body>
     <a href="#content" class="skip-nav-link" aria-label="Skip to main content"
@@ -42,6 +41,7 @@
         id="nav-toggle"
         class="nav-toggle"
         aria-label="Toggle main navigation menu"
+        aria-expanded="false"
       />
 
       <label
@@ -52,7 +52,11 @@
       >
       </label>
 
-      <a class="nav-logo-link" href="index.html" aria-label="Topgolf home page link">
+      <a
+        class="nav-logo-link"
+        href="index.html"
+        aria-label="Topgolf home page link"
+      >
         <figure
           class="nav-logo nav-logo--shield"
           aria-hidden="true"
@@ -125,27 +129,27 @@
             ></path>
             <path
               d="M244.52,303a.31.31,0,0,0,0-.32,1.44,1.44,0,0,0-.35-.35,3.3,3.3,0,0,0-.57-.33l-.34-.15v-.54l.27.08c.34.12.67.25,1,.39a8,8,0,0,1,.83.44,3.59,3.59,0,0,1,.47.35l3.64.65a10.35,10.35,0,0,0-1.35-.95,17.71,17.71,0,0,0-1.85-.92c-.64-.28-1.34-.53-2-.76q-.45-.15-.93-.27v-.49l1,.28c.41.13.82.26,1.21.4s.8.28,1.18.43l1.56-.35c-.55-.21-1.11-.41-1.67-.6s-1.12-.37-1.69-.54-1.06-.31-1.6-.45v-7.15c2.62-1.4,5.54.73,7.42-3.09-2.52.78-4.06-1.3-7.42-1.33h-1.56v14l-.4,0a2.47,2.47,0,0,0-.63,0,.9.9,0,0,0-.41.16.28.28,0,0,0-.11.28.67.67,0,0,0,.24.36,2.68,2.68,0,0,0,.57.38,6.17,6.17,0,0,0,.81.34,8.8,8.8,0,0,0,1,.23,4.76,4.76,0,0,0,.87.08,2.11,2.11,0,0,0,.63-.09A.53.53,0,0,0,244.52,303Z"
-              transform="translate(-216 -280.17)"
+              transform="translate(-324 -237.77)"
             ></path>
             <path
               d="M252.37,302.42c-.54-.28-1.09-.56-1.65-.81-.36-.17-.73-.33-1.1-.48l-1.56.39.62.29c.37.18.72.37,1.06.57s.69.41,1,.62.5.36.73.54l3.93.71c-.45-.32-.92-.62-1.39-.91S252.93,302.71,252.37,302.42Z"
-              transform="translate(-216 -280.17)"
+              transform="translate(-324 -237.77)"
             ></path>
             <path
               d="M234.77,298.82l-2.59-1.3q-.92,0-1.8.09c-.63.05-1.25.13-1.85.23a14.09,14.09,0,0,0-1.81.41,10.58,10.58,0,0,0-1.53.58l6,1.08a4,4,0,0,1,.61-.39,5.27,5.27,0,0,1,.9-.34,8.86,8.86,0,0,1,1-.23C234.06,298.89,234.41,298.85,234.77,298.82Z"
-              transform="translate(-216 -280.17)"
+              transform="translate(-324 -237.77)"
             ></path>
             <path
               d="M237,298.78c.4,0,.81,0,1.23.08l1.26.15c.39.05.78.11,1.18.19l-.29-.9c-.58-.12-1.15-.22-1.71-.31l-1.81-.24c-.61-.07-1.22-.12-1.81-.16l-.74,0,2.47,1.22Z"
-              transform="translate(-216 -280.17)"
+              transform="translate(-324 -237.77)"
             ></path>
             <path
               d="M236.72,299.49a7.08,7.08,0,0,0-1.69.31,2.54,2.54,0,0,0-1.05.61l4.42.79a.91.91,0,0,1,.3-.23,2.7,2.7,0,0,1,.67-.18,5.83,5.83,0,0,1,.87-.05c.28,0,.59,0,.91.07l-.35-1.08a20.76,20.76,0,0,0-2.09-.25A14.56,14.56,0,0,0,236.72,299.49Z"
-              transform="translate(-216 -280.17)"
+              transform="translate(-324 -237.77)"
             ></path>
             <path
               d="M240.83,303.47a9,9,0,0,1-1.2-.53,5.2,5.2,0,0,1-.85-.58,3.21,3.21,0,0,1-.32-.32l-4.82-.85a2,2,0,0,0,.44,1.12,7.06,7.06,0,0,0,1.83,1.54,17.6,17.6,0,0,0,3.16,1.51,24.25,24.25,0,0,0,3.94,1.09l-.85-2.58A12.91,12.91,0,0,1,240.83,303.47Z"
-              transform="translate(-216 -280.17)"
+              transform="translate(-324 -237.77)"
             ></path>
             <path
               d="M552.29,321.47v0a2.7,2.7,0,0,1,2.69-2.69,2.67,2.67,0,0,1,2.68,2.68h0a2.69,2.69,0,1,1-5.37,0Zm5,0h0a2.28,2.28,0,1,0-4.56,0v0a2.26,2.26,0,0,0,2.28,2.29A2.29,2.29,0,0,0,557.26,321.45Zm-3.35-1.39h1.26c.62,0,1.08.29,1.08.89a.83.83,0,0,1-.59.83l.68,1h-.78l-.58-.84h-.42v.84h-.65Zm1.22,1.31c.29,0,.46-.15.46-.37s-.18-.37-.46-.37h-.57v.74Z"
@@ -196,7 +200,7 @@
               id="nav-link-fnb"
               class="nav-link"
               href="food.html"
-              aria-label="Go to Food and Drink page"
+              aria-label="Go to Food page"
               >Food</a
             >
           </li>
@@ -262,64 +266,182 @@
     </header>
 
     <main id="content">
-      <section class="hero-section" id="pricing-hero" aria-label="Pricing page introduction and overview">
-        <h1 class="page-title" id="pricing-page-title" tabindex="0" aria-label="Pricing Topgolf page heading">Pricing</h1>
-        <p tabindex="0" aria-label="Pricing information and instructions">
-          Pricing may vary by location. Choose your location to see specific pricing.
-        </p>
+      <section class="hero-section" aria-label="Hero section with Topgolf branding and promotion">
+        <article class="hero-header">
+          <figure
+            class="hero-wordmark"
+            aria-hidden="true"
+            aria-label="Topgolf wordmark logo"
+          >
+            <svg
+              class="wordmark"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 360 60"
+              role="img"
+              aria-label="Topgolf Wordmark"
+            >
+              <title>Topgolf Logo Horizontal</title>
+              <path
+                d="M253.82,325.69h0a2.68,2.68,0,1,1,5.36,0v0a2.68,2.68,0,1,1-5.36,0Zm5,0v0a2.26,2.26,0,0,0-2.28-2.29,2.29,2.29,0,0,0-2.28,2.31h0a2.28,2.28,0,1,0,4.56,0Zm-3.34-1.4h1.25c.62,0,1.08.29,1.08.89a.82.82,0,0,1-.59.83l.68,1h-.78l-.58-.84h-.41V327h-.65Zm1.21,1.31c.29,0,.46-.15.46-.37s-.18-.37-.46-.37h-.56v.74Z"
+                transform="translate(-216 -280.17)"
+              ></path>
+              <path
+                d="M243.25,280.17A85.08,85.08,0,0,0,216,284.62a85.6,85.6,0,0,0,27.25,47.2,85.6,85.6,0,0,0,27.25-47.2A85.08,85.08,0,0,0,243.25,280.17Zm15.6,27.18-.1-.09a10.81,10.81,0,0,0-.93-1,13.71,13.71,0,0,0-1.11-1l-4.21-.74c.15.18.29.35.4.51a2.89,2.89,0,0,1,.39.76,1.8,1.8,0,0,1,.11.74,1.53,1.53,0,0,1-.11.48l4.5,2.23-.54.93-4.63-2.33a3.83,3.83,0,0,1-.88.49,7,7,0,0,1-1.45.41,13.77,13.77,0,0,1-2,.2,23.62,23.62,0,0,1-2.46-.08l3,6.75a26,26,0,0,0,5.07-.31,80.73,80.73,0,0,1-10.65,12.29,81.72,81.72,0,0,1-13.93-17.32,37.92,37.92,0,0,0,4.29,2.05,46.31,46.31,0,0,0,6,1.95,47.22,47.22,0,0,0,6.34,1.15l-2.25-6.83c-.94-.16-1.88-.36-2.81-.6s-1.86-.53-2.74-.84-1.68-.65-2.43-1a20.83,20.83,0,0,1-1.9-1l-6.5,1.65-.69-1.31,5.79-1.31a7.69,7.69,0,0,1-1.12-1.06,4.24,4.24,0,0,1-.63-1,2,2,0,0,1-.18-.87,1.75,1.75,0,0,1,.12-.55h0l-6.77-1.18a80.37,80.37,0,0,1-4.14-12.72,82.6,82.6,0,0,1,47.11,0A81.36,81.36,0,0,1,258.85,307.35Z"
+                transform="translate(-216 -280.17)"
+              ></path>
+              <path
+                d="M246.36,303.42a.48.48,0,0,1-.07.23.93.93,0,0,1-.44.33,2.93,2.93,0,0,1-.84.18,6.93,6.93,0,0,1-1.2,0l1.13,2.58a13.82,13.82,0,0,0,3.25,0,4.19,4.19,0,0,0,1.87-.65,1.23,1.23,0,0,0,.57-1,1.7,1.7,0,0,0-.33-.93Z"
+                transform="translate(-216 -280.17)"
+              ></path>
+              <path
+                d="M244.52,303a.31.31,0,0,0,0-.32,1.44,1.44,0,0,0-.35-.35,3.3,3.3,0,0,0-.57-.33l-.34-.15v-.54l.27.08c.34.12.67.25,1,.39a8,8,0,0,1,.83.44,3.59,3.59,0,0,1,.47.35l3.64.65a10.35,10.35,0,0,0-1.35-.95,17.71,17.71,0,0,0-1.85-.92c-.64-.28-1.34-.53-2-.76q-.45-.15-.93-.27v-.49l1,.28c.41.13.82.26,1.21.4s.8.28,1.18.43l1.56-.35c-.55-.21-1.11-.41-1.67-.6s-1.12-.37-1.69-.54-1.06-.31-1.6-.45v-7.15c2.62-1.4,5.54.73,7.42-3.09-2.52.78-4.06-1.3-7.42-1.33h-1.56v14l-.4,0a2.47,2.47,0,0,0-.63,0,.9.9,0,0,0-.41.16.28.28,0,0,0-.11.28.67.67,0,0,0,.24.36,2.68,2.68,0,0,0,.57.38,6.17,6.17,0,0,0,.81.34,8.8,8.8,0,0,0,1,.23,4.76,4.76,0,0,0,.87.08,2.11,2.11,0,0,0,.63-.09A.53.53,0,0,0,244.52,303Z"
+                transform="translate(-324 -237.77)"
+              ></path>
+              <path
+                d="M252.37,302.42c-.54-.28-1.09-.56-1.65-.81-.36-.17-.73-.33-1.1-.48l-1.56.39.62.29c.37.18.72.37,1.06.57s.69.41,1,.62.5.36.73.54l3.93.71c-.45-.32-.92-.62-1.39-.91S252.93,302.71,252.37,302.42Z"
+                transform="translate(-324 -237.77)"
+              ></path>
+              <path
+                d="M234.77,298.82l-2.59-1.3q-.92,0-1.8.09c-.63.05-1.25.13-1.85.23a14.09,14.09,0,0,0-1.81.41,10.58,10.58,0,0,0-1.53.58l6,1.08a4,4,0,0,1,.61-.39,5.27,5.27,0,0,1,.9-.34,8.86,8.86,0,0,1,1-.23C234.06,298.89,234.41,298.85,234.77,298.82Z"
+                transform="translate(-324 -237.77)"
+              ></path>
+              <path
+                d="M237,298.78c.4,0,.81,0,1.23.08l1.26.15c.39.05.78.11,1.18.19l-.29-.9c-.58-.12-1.15-.22-1.71-.31l-1.81-.24c-.61-.07-1.22-.12-1.81-.16l-.74,0,2.47,1.22Z"
+                transform="translate(-324 -237.77)"
+              ></path>
+              <path
+                d="M236.72,299.49a7.08,7.08,0,0,0-1.69.31,2.54,2.54,0,0,0-1.05.61l4.42.79a.91.91,0,0,1,.3-.23,2.7,2.7,0,0,1,.67-.18,5.83,5.83,0,0,1,.87-.05c.28,0,.59,0,.91.07l-.35-1.08a20.76,20.76,0,0,0-2.09-.25A14.56,14.56,0,0,0,236.72,299.49Z"
+                transform="translate(-324 -237.77)"
+              ></path>
+              <path
+                d="M240.83,303.47a9,9,0,0,1-1.2-.53,5.2,5.2,0,0,1-.85-.58,3.21,3.21,0,0,1-.32-.32l-4.82-.85a2,2,0,0,0,.44,1.12,7.06,7.06,0,0,0,1.83,1.54,17.6,17.6,0,0,0,3.16,1.51,24.25,24.25,0,0,0,3.94,1.09l-.85-2.58A12.91,12.91,0,0,1,240.83,303.47Z"
+                transform="translate(-324 -237.77)"
+              ></path>
+              <path
+                d="M552.29,321.47v0a2.7,2.7,0,0,1,2.69-2.69,2.67,2.67,0,0,1,2.68,2.68h0a2.69,2.69,0,1,1-5.37,0Zm5,0h0a2.28,2.28,0,1,0-4.56,0v0a2.26,2.26,0,0,0,2.28,2.29A2.29,2.29,0,0,0,557.26,321.45Zm-3.35-1.39h1.26c.62,0,1.08.29,1.08.89a.83.83,0,0,1-.59.83l.68,1h-.78l-.58-.84h-.42v.84h-.65Zm1.22,1.31c.29,0,.46-.15.46-.37s-.18-.37-.46-.37h-.57v.74Z"
+                transform="translate(-216 -280.17)"
+              ></path>
+              <polygon
+                points="61.57 6.65 60.74 16.11 74.68 16.11 72.24 43.98 81.7 43.98 84.14 16.11 98.07 16.11 98.9 6.65 61.57 6.65"
+              ></polygon>
+              <path
+                d="M486,286.83H467.39a12.18,12.18,0,0,0-11.88,10.92l-1.35,15.48a9.86,9.86,0,0,0,10,10.92H482.7a12.17,12.17,0,0,0,11.88-10.92l1.36-15.48A9.86,9.86,0,0,0,486,286.83Zm-.85,26.4a1.62,1.62,0,0,1-1.59,1.46H465a1.32,1.32,0,0,1-1.33-1.46L465,297.75a1.64,1.64,0,0,1,1.59-1.46h18.58a1.32,1.32,0,0,1,1.34,1.46Z"
+                transform="translate(-216 -280.17)"
+              ></path>
+              <path
+                d="M347.33,286.83H328.75a12.17,12.17,0,0,0-11.88,10.92l-1.36,15.48a9.87,9.87,0,0,0,10,10.92h18.58a12.18,12.18,0,0,0,11.88-10.92l1.35-15.48A9.85,9.85,0,0,0,347.33,286.83Zm-.85,26.4a1.63,1.63,0,0,1-1.59,1.46H326.31a1.31,1.31,0,0,1-1.33-1.46l1.35-15.48a1.62,1.62,0,0,1,1.59-1.46H346.5a1.32,1.32,0,0,1,1.33,1.46Z"
+                transform="translate(-216 -280.17)"
+              ></path>
+              <polygon
+                points="296.52 6.65 287.06 6.65 283.8 43.98 318.03 43.98 318.86 34.52 294.09 34.52 296.52 6.65"
+              ></polygon>
+              <path
+                d="M393.77,286.83h-29.5L361,324.15h9.46l.82-9.28h20a12.18,12.18,0,0,0,11.88-10.93l.54-6.19A9.86,9.86,0,0,0,393.77,286.83Zm0,17.11a1.64,1.64,0,0,1-1.59,1.46h-20l.79-9.11h20a1.32,1.32,0,0,1,1.34,1.46Z"
+                transform="translate(-216 -280.17)"
+              ></path>
+              <path
+                d="M439.08,308.6l-.39,4.63a1.63,1.63,0,0,1-1.59,1.46H418.51a1.32,1.32,0,0,1-1.34-1.46l1.36-15.48a1.62,1.62,0,0,1,1.59-1.46h29.5l.83-9.46H421a12.17,12.17,0,0,0-11.88,10.92l-1.36,15.48a9.87,9.87,0,0,0,10,10.92h23.25a7,7,0,0,0,6.81-6.26l1.35-15.58h-17.5l7.49,6.29"
+                transform="translate(-216 -280.17)"
+              ></path>
+              <polygon
+                points="359.17 16.11 360 6.65 325.77 6.65 322.5 43.98 331.96 43.98 333.05 31.6 354.72 31.6 355.55 22.14 333.88 22.14 334.4 16.11 359.17 16.11"
+              ></polygon>
+            </svg>
+          </figure>
+          <h1 class="hero-title" aria-label="Come Play Around, Topgolf main headline">Come Play Around</h1>
+        </article>
+        <video
+          class="hero-video"
+          loop
+          autoplay
+          muted
+          playsinline
+          poster="https://s3.topgolf.com/video/TG24-GenericTGSpot-WebHeader-1280x720_poster.jpg"
+          aria-label="Topgolf promotional video"
+        >
+          <source
+            src="https://s3.topgolf.com/video/TG24-GenericTGSpot-WebHeader-1280x720_30s.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </section>
 
-      <section class="pricing-section section section--steps has-dots-right" aria-label="Topgolf Bay Pricing section">
-        <article class="pricing-content" aria-label="Pricing table and information">
-          <section class="table-wrapper" role="region" aria-label="Pricing table, scroll horizontally on smaller screens" tabindex="0">
-            <table class="pricing-table">
-              <caption class="pricing-table-caption">Pricing by Time and Day</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Time of Day</th>
-                  <th scope="col">Monday - Thursday</th>
-                  <th scope="col">Friday - Sunday</th>
-                  <th scope="col">Holidays</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Before 5 PM</th>
-                  <td>$40/hr</td>
-                  <td>$50/hr</td>
-                  <td>$55/hr</td>
-                </tr>
-                <tr>
-                  <th scope="row">5 PM - 10 PM</th>
-                  <td>$50/hr</td>
-                  <td>$60/hr</td>
-                  <td>$65/hr</td>
-                </tr>
-                <tr>
-                  <th scope="row">After 10 PM</th>
-                  <td>$45/hr</td>
-                  <td>$55/hr</td>
-                  <td>$60/hr</td>
-                </tr>
-              </tbody>
-            </table>
+      <section class="experience-section" id="experience" aria-label="Topgolf experience overview with images and description">
+        <article class="experience-grid" aria-label="Experience grid layout with images and content" aria-describedby="experience-title">
+          <section class="experience-images" aria-label="Experience image gallery">
+            <figure class="experience-image" aria-label="Gallery image 1 of 3">
+              <picture>
+                <source
+                  srcset="
+                    https://topgolf.com/api/urls/image?fwd=1&path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fnight%2Ftg-cpa-bay-night-adult-group-selects-r.jpg&fit=cover&width=800&height=500
+                  "
+                  media="(min-width: 900px)"
+                />
+                <img
+                  src="https://topgolf.com/api/urls/image?fwd=1&path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fnight%2Ftg-cpa-bay-night-adult-group-selects-r.jpg&fit=cover&width=480&height=380&format=png"
+                  alt="Topgolf bay at night with adult group"
+                  width="480"
+                  height="380"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figure class="experience-image" aria-label="Gallery image 2 of 3">
+              <picture>
+                <source
+                  srcset="
+                    https://topgolf.com/api/urls/image?fwd=1&path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fday%2Ftg-cpa-bay-day-adult-group-Ruiz-0892.jpg&fit=cover&width=800&height=450
+                  "
+                  media="(min-width: 900px)"
+                />
+                <img
+                  src="https://topgolf.com/api/urls/image?fwd=1&path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Fcp%2Fday%2Ftg-cpa-bay-day-adult-group-Ruiz-0892.jpg&fit=cover&width=480&height=360&format=png"
+                  alt="Topgolf bay during day with adult group"
+                  width="480"
+                  height="360"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figure class="experience-image" aria-label="Gallery image 3 of 3">
+              <picture>
+                <source
+                  srcset="
+                    https://topgolf.com/api/urls/image?fwd=1&path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Flifestyle%2Fbay%2Ftg-Bay-Day-Adults-Party.jpg&fit=cover&width=640&height=640
+                  "
+                  media="(min-width: 900px)"
+                />
+                <img
+                  src="https://topgolf.com/api/urls/image?fwd=1&path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Flifestyle%2Fbay%2Ftg-Bay-Day-Adults-Party.jpg&fit=cover&width=420&height=420&format=png"
+                  alt="Topgolf bay day adults party"
+                  width="420"
+                  height="420"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
           </section>
+          <article class="experience-content" tabindex="0">
+            <h2 class="experience-title" tabindex="0" id="experience-title" aria-label="It's Golf. It's Not Golf. It's Topgolf.">
+              It's Golf. It's Not Golf. <strong>It's Topgolf.</strong>
+            </h2>
+            <p aria-label="Description of Topgolf golf offerings">
+              We've got lots of stuff that makes us <em>golf:</em> clubs, balls,
+              tees, turf, a ball-picker-upper-cart thing, etc. We also have lots
+              of stuff that's <em>not golf:</em> loud music, giant targets,
+              giant TVs, and hand-crafted food & drinks.
+            </p>
+            <p aria-label="How to play at Topgolf">
+              Using our complimentary clubs or your own, take aim at the giant
+              outfield targets and our high-tech balls will score themselves. We
+              have games for all skill levels, whether you're an aspiring golf
+              pro or picking up a club for the first time. So grab the fam, a
+              few friends, or some coworkers and <em>Come Play Around.</em>
+            </p>
+            <a href="experience.html" class="btn btn-primary" tabindex="0" aria-label="Learn how to play at Topgolf, navigate to experience page">How it Works</a>
+          </article>
         </article>
-
-        <aside class="pricing-features" aria-label="Additional pricing information" tabindex="0">
-          <h3 class="features-title" aria-label="What's Included">What's Included</h3>
-          <ul class="features-list" aria-label="Included with bay rental">
-            <li aria-label="Full bay access">Full Bay Access</li>
-            <li aria-label="Unlimited golf balls">Unlimited Balls</li>
-            <li aria-label="Virtual games and competitions">Virtual Games</li>
-            <li aria-label="Food and beverage available">Food + Drink</li>
-            <li aria-label="Group friendly">Group Friendly</li>
-          </ul>
-          <section class="pricing-callout" aria-label="Special offers">
-            <h4 class="callout-title" aria-label="Looking for more value?">Looking for more value?</h4>
-            <p class="callout-text" aria-label="Check out our membership and package options">Check out our <a class="highlighted-link" href="">membership</a> and <a class="highlighted-link" href="">package options</a> for even better rates!</p>
-          </section>
-        </aside>
       </section>
     </main>
 
@@ -335,8 +457,8 @@
         >Skip Footer</a
       >
       <nav class="footer-columns" aria-label="Footer navigation menu">
-        <ul class="footer-links" aria-label="Footer main links">
-          <li aria-label="Gift Cards link">
+        <ul class="footer-links" aria-label="Footer main navigation links">
+          <li aria-label="Gift Cards footer link">
             <a
               href=""
               target="_blank"
@@ -345,7 +467,7 @@
               >Gift Cards</a
             >
           </li>
-          <li aria-label="Memberships link">
+          <li aria-label="Memberships footer link">
             <a
               href=""
               target="_blank"
@@ -354,7 +476,7 @@
               >Memberships</a
             >
           </li>
-          <li aria-label="Golf Lessons link">
+          <li aria-label="Golf Lessons footer link">
             <a
               href=""
               target="_blank"
@@ -363,7 +485,7 @@
               >Golf Lessons</a
             >
           </li>
-          <li aria-label="Find a Location link">
+          <li aria-label="Find a Location footer link">
             <a
               href=""
               target="_blank"
@@ -372,7 +494,7 @@
               >Find a Location</a
             >
           </li>
-          <li aria-label="Contact Us link">
+          <li aria-label="Contact Us footer link">
             <a
               href="contact.html"
               class="footer-link"
@@ -380,7 +502,7 @@
               >Contact Us</a
             >
           </li>
-          <li aria-label="Careers link">
+          <li aria-label="Careers footer link">
             <a href="" target="_blank" class="footer-link" aria-label="Careers"
               >Careers</a
             >
@@ -391,8 +513,8 @@
           tabindex="0"
           aria-label="Legal information"
         >
-          <h3 class="footer-heading" aria-label="Legal Stuff">Legal Stuff</h3>
-          <ul class="footer-list" aria-label="Legal links">
+          <h3 class="footer-heading" id="legal-heading" aria-label="Legal Stuff section">Legal Stuff</h3>
+          <ul class="footer-list" aria-label="Legal documentation links" aria-describedby="legal-heading">
             <li aria-label="Terms and Conditions link">
               <a
                 href=""
@@ -454,8 +576,8 @@
           tabindex="0"
           aria-label="Company information"
         >
-          <h3 class="footer-heading" aria-label="Company">Company</h3>
-          <ul class="footer-list" aria-label="Company links">
+          <h3 class="footer-heading" id="company-heading" aria-label="Company information section">Company</h3>
+          <ul class="footer-list" aria-label="Company links" aria-describedby="company-heading">
             <li aria-label="Driving for Good link">
               <a
                 href=""
@@ -519,13 +641,15 @@
         >
           <h3
             class="footer-heading"
-            aria-label="Sign up for offers and updates"
+            id="subscribe-heading"
+            aria-label="Sign up for offers and updates section"
           >
             Sign up for offers + updates
           </h3>
           <p
             class="footer-subscribe-text"
-            aria-label="Subscribe to email and text updates"
+            aria-label="Email and text subscription benefits"
+            aria-describedby="subscribe-heading"
           >
             Yes, another email signup thingy in a website footer. But our email
             and text updates are ones you'll
@@ -587,7 +711,6 @@
         </small>
       </nav>
     </footer>
-
     <script src="script/main.js"></script>
     <script src="script/dyslexia-mode.js"></script>
   </body>

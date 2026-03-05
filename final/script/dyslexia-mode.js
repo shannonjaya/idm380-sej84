@@ -27,7 +27,7 @@ class DyslexiaMode {
     styles.textContent = `
       body.dyslexia-mode {
         font-family: 'Open Dyslexic', Arial, sans-serif;
-        font-size: 0.9em;
+        font-size: 0.85em;
         letter-spacing: 0.12em;
         word-spacing: 0.16em;
         line-height: 1.8;
@@ -61,6 +61,12 @@ class DyslexiaMode {
         letter-spacing: 0.08em;
         line-height: 1.4;
         margin-bottom: 0.8em;
+      }
+
+      body.dyslexia-mode .hero-title {
+        font-size: 5vw !important;
+        line-height: 1.2 !important;
+        max-width: 18ch !important;
       }
 
       /* FOOTER */

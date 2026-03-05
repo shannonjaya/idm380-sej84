@@ -58,7 +58,7 @@ h1#fnb-page-title:after {
 @media (max-width: 768px) {
   .hero-section {
     padding: calc(var(--rhythm) * 2) var(--rhythm);
-    min-height: 50vh;
+    max-height: 50vh;
   }
 
   .hero-section > p {

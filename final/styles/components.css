@@ -195,6 +195,24 @@ nav.location-bar.location-bar--desktop {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-logo-link svg path,
+.nav-logo-link svg polygon {
+  transition: fill 0.3s ease;
+}
+
+.nav-logo-link:hover svg path,
+.nav-logo-link:hover svg polygon {
+  fill: var(--secondary-mid);
+}
+
+.nav-logo-link:focus-visible {
+  outline: 2px solid var(--tertiary-mid);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .nav-logo {
