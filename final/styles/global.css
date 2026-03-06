@@ -154,10 +154,6 @@ strong {
   margin: var(--rhythm) auto;
 }
 
-.normal-case {
-  text-transform: none;
-}
-
 .nowrap {
   white-space: nowrap;
 }

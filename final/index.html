@@ -163,6 +163,13 @@
         </figure>
       </a>
 
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-hidden="true"
+      />
+
       <button
         id="nav-toggle-btn"
         class="nav-toggle-btn"
@@ -170,13 +177,6 @@
         aria-expanded="false"
         aria-controls="site-nav"
       ></button>
-
-      <input
-        type="checkbox"
-        id="nav-toggle"
-        class="nav-toggle"
-        aria-hidden="true"
-      />
 
       <nav id="site-nav" class="site-nav" aria-label="Primary site navigation menu">
         <ul class="menu-links" aria-label="Main navigation links">
@@ -216,13 +216,22 @@
               >Contact</a
             >
           </li>
+          <li aria-label="Case Study navigation item">
+            <a
+              id="nav-link-study"
+              class="nav-link"
+              href="case-study.html"
+              aria-label="Go to Case Study page"
+              >Study</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main id="content">
+    <main id="content" aria-label="Main content area">
       <section class="hero-section" aria-label="Hero section with Topgolf branding and promotion">
-        <article class="hero-header">
+        <article class="hero-header" aria-label="Hero section header">
           <figure
             class="hero-wordmark"
             aria-hidden="true"
@@ -305,21 +314,12 @@
           </figure>
           <h1 class="hero-title" aria-label="Come Play Around, Topgolf main headline">Come Play Around</h1>
         </article>
-        <video
-          class="hero-video"
-          loop
-          autoplay
-          muted
-          playsinline
-          poster="https://s3.topgolf.com/video/TG24-GenericTGSpot-WebHeader-1280x720_poster.jpg"
-          aria-label="Topgolf promotional video"
-        >
-          <source
-            src="https://s3.topgolf.com/video/TG24-GenericTGSpot-WebHeader-1280x720_30s.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+        <img
+          class="hero-image"
+          src="https://impx.topgolf.com/CW8EnUlAFNUQe0jFCAal0k9UO3VWhEhOAR_XHaQJbyQ/da:0/rt:fill/w:1920/h:960/q:70/aHR0cHM6Ly9zMy50b3Bnb2xmLmNvbS9nYWxsZXJ5LzEyNTU2LzIyOTAyXzE3MDQzODIzNzFfZnVsbC5qcGc.png"
+          alt="Topgolf venue interior featuring modern entertainment space with golf simulators and ambient lighting"
+          loading="lazy"
+        />
       </section>
 
       <section class="experience-section" id="experience" aria-label="Topgolf experience overview with images and description">
@@ -377,7 +377,7 @@
               </picture>
             </figure>
           </section>
-          <article class="experience-content" tabindex="0">
+          <article class="experience-content" tabindex="0" aria-label="Topgolf experience description content">
             <h2 class="experience-title" tabindex="0" id="experience-title" aria-label="It's Golf. It's Not Golf. It's Topgolf.">
               It's Golf. It's Not Golf. <strong>It's Topgolf.</strong>
             </h2>

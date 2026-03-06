@@ -164,6 +164,13 @@
         </figure>
       </a>
 
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-hidden="true"
+      />
+
       <button
         id="nav-toggle-btn"
         class="nav-toggle-btn"
@@ -171,13 +178,6 @@
         aria-expanded="false"
         aria-controls="site-nav"
       ></button>
-
-      <input
-        type="checkbox"
-        id="nav-toggle"
-        class="nav-toggle"
-        aria-hidden="true"
-      />
 
       <nav id="site-nav" class="site-nav" aria-label="Primary site navigation menu">
         <ul class="menu-links" aria-label="Main navigation links">
@@ -217,11 +217,20 @@
               >Contact</a
             >
           </li>
+          <li aria-label="Case Study navigation item">
+            <a
+              id="nav-link-study"
+              class="nav-link"
+              href="case-study.html"
+              aria-label="Go to Case Study page"
+              >Study</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main id="content">
+    <main id="content" aria-label="Main content area">
       <section class="hero-section" id="contact-hero" aria-label="Contact page introduction and overview">
         <h1 class="page-title" id="contact-page-title" tabindex="0" aria-label="Contact Topgolf page heading">Contact Us</h1>
         <p tabindex="0" aria-label="Contact form description and instructions">

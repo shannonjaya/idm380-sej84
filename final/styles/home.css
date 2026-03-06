@@ -7,6 +7,14 @@
   aspect-ratio: 16 / 9;
 }
 
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
 figure.hero-wordmark {
   display: flex;
   justify-content: center;
@@ -76,7 +84,7 @@ figure.hero-wordmark {
   color: #ff6600;
 }
 
-.hero-video {
+.hero-image {
   width: 100%;
   height: clamp(200px, 60vh, 500px);
   display: block;
@@ -86,7 +94,7 @@ figure.hero-wordmark {
 
 @media (max-width: 640px) {
   .hero-section,
-  .hero-video {
+  .hero-image {
     height: clamp(200px, 50vw, 350px);
   }
   figure.hero-wordmark {
@@ -236,39 +244,12 @@ figure.hero-wordmark {
 
 /* RESPONSIVE*/
 @media (max-width: 768px) {
-  .features-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 3rem 2rem;
-  }
-
-  .features-section h2 {
-    grid-column: 1 / -1;
-  }
-
   .feature {
     margin-bottom: 0;
-  }
-
-  .cta-section {
-    padding: 4rem 2rem;
-  }
-
-  .cta-section h2 {
-    font-size: 3rem;
-  }
-
-  .location-section {
-    padding: 4rem 2rem;
-  }
+  }  
 }
 
 @media (max-width: 1024px) {
-  .features-section {
-    padding: 4rem;
-  }
-
   .feature {
     padding: 2.5rem;
   }
@@ -286,7 +267,7 @@ figure.hero-wordmark {
 
 /* PRINT */
 @media print {
-  .hero-video {
+  .hero-image {
     display: none;
   }
 

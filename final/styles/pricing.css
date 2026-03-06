@@ -210,6 +210,18 @@ h1#pricing-page-title:after {
   }
 }
 
+@media (max-width: 1000px) {
+  .pricing-section {
+    grid-template-columns: 1fr;
+    padding: calc(var(--rhythm) * 2);
+    gap: calc(var(--rhythm) * 2);
+  }
+
+  .pricing-section.has-dots-right::after {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .pricing-section {
     grid-template-columns: 1fr;

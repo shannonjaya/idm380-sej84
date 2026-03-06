@@ -163,6 +163,13 @@
         </figure>
       </a>
 
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-hidden="true"
+      />
+
       <button
         id="nav-toggle-btn"
         class="nav-toggle-btn"
@@ -170,13 +177,6 @@
         aria-expanded="false"
         aria-controls="site-nav"
       ></button>
-
-      <input
-        type="checkbox"
-        id="nav-toggle"
-        class="nav-toggle"
-        aria-hidden="true"
-      />
 
       <nav id="site-nav" class="site-nav" aria-label="Primary site navigation menu">
         <ul class="menu-links" aria-label="Main navigation links">
@@ -216,6 +216,15 @@
               >Contact</a
             >
           </li>
+          <li aria-label="Case Study navigation item">
+            <a
+              id="nav-link-study"
+              class="nav-link"
+              href="case-study.html"
+              aria-label="Go to Case Study page"
+              >Study</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -229,7 +238,7 @@
       </section>
 
       <section class="food-showcase" tabindex="0" aria-label="Featured food items showcase">
-        <section class="title-wrapper">
+        <section class="title-wrapper" aria-label="Food section title and description">
           <h2 class="section-title" aria-label="Explore Some of Topgolf's Best Food">
             Explore Some of Topgolf's Best Food
           </h2>
@@ -237,7 +246,7 @@
             Our menu has pages of delicious food and drinks, and some of our favorites are below. From vegetarian and gluten-free options to donut holes, our menu caters to almost every taste. Treat yourself to something new or get a shareable for your whole crew. Then, top it off with one of our specialty drinks and keep on playing.
           </p>
         </section>
-        <article class="food-gallery" aria-label="Featured food items gallery">
+        <article class="food-gallery" tabindex="0" aria-label="Featured food items gallery">
           <figure class="food-item" aria-label="BBQ Twist Tower">
             <img
               src="https://topgolf.com/api/urls/image?fwd=1&amp;path=https%3A%2F%2Fs3.topgolf.com%2Fuploads%2Fimages%2Ffnb%2Ffood%2Ftg-fnb-food-shareables-bbq-twist-tower-ijKThLRW.jpg%3Fresize.width%3D800&amp;fit=cover&amp;width=800&amp;height=450&amp;format=png"
@@ -287,7 +296,7 @@
         </h2>
         <article class="faq-list" aria-label="FAQ items">
           <details class="faq-item" aria-label="Do you have any vegetarian options?">
-            <summary class="faq-title" aria-label="Do you have any vegetarian options?">
+            <summary class="faq-title" tabindex="0" aria-label="Do you have any vegetarian options?">
               Do you have any vegetarian options?
             </summary>
             <p class="faq-content" aria-label="Vegetarian options answer">
@@ -295,7 +304,7 @@
             </p>
           </details>
           <details class="faq-item" aria-label="Do you have any gluten-friendly options?">
-            <summary class="faq-title" aria-label="Do you have any gluten-friendly options?">
+            <summary class="faq-title" tabindex="0" aria-label="Do you have any gluten-friendly options?">
               Do you have any gluten-friendly options?
             </summary>
             <p class="faq-content" aria-label="Gluten-friendly options answer">
@@ -303,7 +312,7 @@
             </p>
           </details>
           <details class="faq-item" aria-label="Do you have any vegan options?">
-            <summary class="faq-title" aria-label="Do you have any vegan options?">
+            <summary class="faq-title" tabindex="0" aria-label="Do you have any vegan options?">
               Do you have any vegan options?
             </summary>
             <p class="faq-content" aria-label="Vegan options answer">
@@ -311,7 +320,7 @@
             </p>
           </details>
           <details class="faq-item" aria-label="Can I bring in my own food?">
-            <summary class="faq-title" aria-label="Can I bring in my own food?">
+            <summary class="faq-title" tabindex="0" aria-label="Can I bring in my own food?">
               Can I bring in my own food?
             </summary>
             <p class="faq-content" aria-label="Outside food policy answer">

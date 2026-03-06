@@ -265,6 +265,16 @@ nav.site-nav {
   outline-offset: var(--focus-outline-offset);
 }
 
+/* HAMBURGER X ANIMATION */
+.nav-toggle:checked ~ .nav-toggle-btn::before {
+  transform: rotate(45deg) translate(4px, 9px);
+  box-shadow: none;
+}
+
+.nav-toggle:checked ~ .nav-toggle-btn::after {
+  transform: rotate(-45deg) translate(7px, -12px);
+}
+
 /* RESPONSIVE STYLES */
 
 /* MOBILE STYLES */
