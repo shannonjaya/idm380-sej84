@@ -316,3 +316,109 @@ article.event-content {
 .event-text {
   margin: 0 0 var(--rhythm) 0;
 }
+
+/* RESPONSIVE STYLES */
+
+/* MOBILE STYLES */
+@media (max-width: 767px) {
+  /* STEPS */
+  section.section--steps {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: calc(var(--rhythm) * 0.5) !important;
+  }
+
+  figure.feature-media {
+    order: -1;
+  }
+
+  .feature-content--reversed {
+    order: 0;
+  }
+
+  hgroup.step-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .step-description {
+    margin-top: calc(var(--rhythm) * -1);
+    padding: 0;
+  }
+
+  .step-badge,
+  .feature-content--reversed .step-badge {
+    transform: rotate(-4deg);
+    position: static;
+  }
+
+  /* FAQ */
+  section.faq-section {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  article.faq-card {
+    padding-inline: 1rem;
+    grid-column: auto;
+  }
+
+  /* CARDS */
+  article.card {
+    display: grid !important;
+    grid-template-columns: 40% 1fr;
+    gap: 1rem;
+    align-items: start;
+    align-content: start;
+  }
+
+  figure.card-image {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .button-group {
+    justify-content: center !important;
+  }
+
+  section.venue-info-section {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  article.card,
+  article.safety-card {
+    grid-column: auto;
+  }
+
+  aside.app-info {
+    max-width: 100%;
+  }
+
+  /* EVENT SECTION */
+  section.event-callout {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding-inline: 1rem;
+  }
+
+  figure.event-media {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  article.event-content {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    padding: 1rem;
+  }
+}
+

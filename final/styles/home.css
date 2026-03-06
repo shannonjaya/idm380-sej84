@@ -223,17 +223,6 @@ figure.hero-wordmark {
   transition: all 0.3s ease;
 }
 
-.btn-primary {
-  background-color: white;
-  color: #0004ff;
-  border: 2px solid white;
-}
-
-.btn-primary:hover {
-  background-color: transparent;
-  color: white;
-}
-
 .btn-secondary {
   background-color: #0004ff;
   color: white;

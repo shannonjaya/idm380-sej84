@@ -245,3 +245,19 @@ input[type="checkbox"] {
   padding: 0;
   cursor: pointer;
 }
+
+/* RESPONSIVE STYLES */
+
+/* MOBILE STYLES */
+@media (max-width: 767px) {
+  /* FORM */
+  .form-content {
+    padding: var(--rhythm);
+  }
+
+  /* GENERAL SECTIONS */
+  section.section {
+    padding-inline: 1rem;
+  }
+}
+

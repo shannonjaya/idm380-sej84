@@ -109,13 +109,8 @@ h1#pricing-page-title:after {
 
 /* TABLE BODY */
 .pricing-table tbody tr {
+  background-color: var(--background-color);
   border-bottom: 1px solid var(--light-gray);
-  transition: background-color 200ms ease, transform 200ms ease;
-}
-
-.pricing-table tbody tr:hover {
-  background-color: #f0f9ff;
-  transform: scale(1.01);
 }
 
 .pricing-table tbody tr:last-child {
@@ -123,8 +118,8 @@ h1#pricing-page-title:after {
 }
 
 .pricing-table tbody th {
-  background-color: rgba(24, 134, 189, 0.08);
-  color: var(--primary-mid);
+  background-color: var(--primary-dark);
+  color: var(--neutral-white);
   font-weight: var(--font-weight-bold);
   text-transform: none;
   text-align: center;
@@ -283,6 +278,10 @@ h1#pricing-page-title:after {
     min-width: 100%;
   }
 
+  .pricing-table thead {
+    display: none;
+  }
+
   .pricing-table th {
     padding: calc(var(--rhythm) * 0.75) calc(var(--rhythm) * 0.5);
     font-size: 0.75rem;
@@ -291,11 +290,23 @@ h1#pricing-page-title:after {
   .pricing-table tbody th {
     padding: calc(var(--rhythm) * 0.75) calc(var(--rhythm) * 0.5);
     font-size: var(--font-small);
+    text-align: left;
+    font-weight: 700;
   }
 
   .pricing-table tbody td {
     padding: calc(var(--rhythm) * 0.75) calc(var(--rhythm) * 0.5);
     font-size: var(--font-small);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .pricing-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--primary-dark);
+    white-space: nowrap;
   }
 
   .pricing-table-caption {

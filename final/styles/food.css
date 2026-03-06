@@ -68,7 +68,8 @@ h1#fnb-page-title:after {
 
 /* FOOD */
 .food-showcase {
-  padding: calc(var(--rhythm) * 4) calc(var(--rhythm) * 2);
+  padding: calc(var(--rhythm) * 2);
+  padding-top: calc(var(--rhythm)*4);
   background-color: var(--primary-light);
   display: flex;
   flex-direction: column;
@@ -116,7 +117,7 @@ h1#fnb-page-title:after {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--rhythm);
-  margin: calc(var(--rhythm) * 2) 0 calc(var(--rhythm) * 1) 0;
+  margin: calc(var(--rhythm) * 2) calc(var(--rhythm) * 4);
 }
 
 .food-item {
@@ -177,7 +178,7 @@ h1#fnb-page-title:after {
 
 /* FAQ */
 .faq-section {
-  padding: 0 calc(var(--rhythm) * 2) calc(var(--rhythm) * 4) calc(var(--rhythm) * 2);
+  padding: 0 calc(var(--rhythm) * 5) calc(var(--rhythm) * 4) calc(var(--rhythm)*5);
   background-color: var(--primary-light);
   display: flex;
   flex-direction: column;
@@ -191,25 +192,15 @@ h1#fnb-page-title:after {
 }
 
 .faq-item {
-  border: 1px solid var(--secondary-mid);
+  border: 1px solid var(--neutral-light);
   border-radius: 4px;
   background-color: var(--neutral-white);
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.faq-item[open] .faq-content {
-  animation: slideDown 0.3s ease-out forwards;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 500px;
-  }
+.faq-item:hover {
+  transform: scale(1.01);
 }
 
 .faq-title {
@@ -221,12 +212,6 @@ h1#fnb-page-title:after {
   font-size: var(--font-base);
   user-select: none;
   margin: 0;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.faq-title:hover {
-  background-color: var(--primary-dark);
-  color: var(--secondary-mid);
 }
 
 .faq-title::marker {
@@ -234,12 +219,25 @@ h1#fnb-page-title:after {
 }
 
 .faq-content {
-  padding: var(--rhythm);
+  padding: 0 var(--rhythm);
   color: var(--primary-dark);
   font-size: var(--font-base);
   line-height: 1.6;
-  border-top: 1px solid var(--primary-mid);
   margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-bottom: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding-bottom 0.5s ease-in-out;
+  will-change: max-height;
+}
+
+.faq-item[open] .faq-content {
+  max-height: 1000px;
+  opacity: 1;
+  padding-bottom: var(--rhythm);
+  border-top: 1px solid var(--neutral-light);
+  padding-top: var(--rhythm);
 }
 
 .faq-content ul {
