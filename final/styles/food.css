@@ -173,6 +173,7 @@ h1#fnb-page-title:after {
   .food-gallery {
     grid-template-columns: 1fr;
     gap: calc(var(--rhythm) * 0.75);
+    margin: calc(var(--rhythm) * 1) 0;
   }
 }
 
@@ -266,5 +267,71 @@ h1#fnb-page-title:after {
 
   .faq-list {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--neutral-white);
+    background-color: var(--neutral-black);
+  }
+
+  .section-description, .faq-content, .menu-disclaimer {
+    color: var(--neutral-white);
+  }
+
+  .food-showcase {
+    background-color: #0f1419;
+  }
+
+  .food-showcase .section-title {
+    color: var(--neutral-white);
+  }
+
+  .food-gallery {
+    background-color: #0f1419;
+  }
+
+  .faq-section {
+    background-color: #0f1419;
+  }
+
+  .faq-section h2 {
+    color: var(--neutral-white);
+  }
+
+  .faq-item {
+    background-color: #1a1a1a;
+    border-color: #333;
+  }
+
+  article.faq-card, article.card {
+    background-color: #f1f9ff16;
+  }
+
+  .faq-icon {
+    color: #f1f9ffe2;
+  }
+
+  a.highlighted-link {
+    color: var(--primary-light);
+    border-bottom: 2px solid var(--tertiary-light);
+  }
+
+  .faq-disclaimer {
+    background-color: #1a1a1a;
+    color: var(--neutral-white);
+  }
+
+  .faq-title {
+    color: var(--neutral-white);
+  }
+
+  .faq-text {
+    color: var(--neutral-white);
+  }
+
+  p {
+    color: var(--neutral-white);
   }
 }

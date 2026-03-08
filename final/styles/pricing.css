@@ -342,3 +342,68 @@ h1#pricing-page-title:after {
     font-size: 0.75rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--neutral-white);
+    background-color: var(--neutral-black);
+  }
+
+  article.faq-card, article.card {
+    background-color: #f1f9ff16;
+  }
+
+  .faq-icon {
+    color: #f1f9ffe2;
+  }
+
+  a.highlighted-link {
+    color: var(--primary-light);
+    border-bottom: 2px solid var(--tertiary-light);
+  }
+
+  .pricing-table {
+    background-color: #1a1a1a;
+    color: var(--neutral-white);
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    border-color: #333;
+    color: var(--neutral-white);
+  }
+
+  p {
+    color: var(--neutral-white);
+  }
+
+  .pricing-section {
+    background-color: #0f1419;
+  }
+
+  h2 {
+    color: var(--neutral-white);
+  }
+
+  #pricing-hero {
+    background-color: #23262c;
+    color: var(--neutral-white);
+  }
+
+  h1#pricing-page-title {
+    color: var(--neutral-white);
+  }
+
+  #pricing-hero p {
+    color: var(--neutral-white);
+  }
+
+  .pricing-features {
+    background-color: var(--neutral-black);
+  }
+
+  .features-list li, .features-title, .pricing-callout, .callout-title, .callout-text {
+    color: var(--neutral-white);
+  }
+  
+}

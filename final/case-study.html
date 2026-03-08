@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study</title>
+    <link rel="icon" href="https://topgolf.com/favicon.ico" sizes="48x48" />
+    <link
+      rel="icon"
+      href="https://topgolf.com/favicon.svg"
+      sizes="any"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://s3.topgolf.com/apple-touch-icon-cpa.png?v=2023"
+    />
+    <style>
+      @font-face {
+        font-family: "Open Dyslexic";
+        src: url("assets/fonts/OpenDyslexic-Regular.otf") format("opentype");
+        font-weight: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/case-study.css" />
+    <link rel="stylesheet" href="styles/user-pref.css" />
+  </head>
+  <body>
+    <a href="#content" class="skip-nav-link" aria-label="Skip to main content"
+      >Skip to Content</a
+    >
+    <header
+      class="site-header"
+      aria-label="Site header with logo and navigation"
+    >
+      <a
+        class="nav-logo-link"
+        href="index.html"
+        aria-label="Topgolf home page link"
+      >
+        <figure
+          class="nav-logo nav-logo--shield"
+          aria-hidden="true"
+          aria-label="Topgolf shield logo"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 144 136.46"
+            role="img"
+            aria-label="Topgolf Shield"
+          >
+            <title>Topgolf Logo Shield</title>
+            <path
+              d="M396,237.77a224.35,224.35,0,0,0-72,11.76,226.38,226.38,0,0,0,72,124.71,226.37,226.37,0,0,0,72-124.71A224.36,224.36,0,0,0,396,237.77Zm41.21,71.8-.26-.23a31,31,0,0,0-2.46-2.73c-.89-.88-1.88-1.76-2.94-2.64L420.42,302a13.51,13.51,0,0,1,1.06,1.34,8.39,8.39,0,0,1,1,2,5,5,0,0,1,.29,2,4.1,4.1,0,0,1-.3,1.27l11.91,5.88c-.48.82-1,1.64-1.44,2.45l-12.23-6.16a10,10,0,0,1-2.31,1.3,19.46,19.46,0,0,1-3.85,1.08,35.23,35.23,0,0,1-5.2.52,55.77,55.77,0,0,1-6.49-.2l7.83,17.83a70,70,0,0,0,13.41-.8A213.46,213.46,0,0,1,396,363a215.27,215.27,0,0,1-36.81-45.75,100.24,100.24,0,0,0,11.33,5.42,121.83,121.83,0,0,0,15.87,5.16,125.49,125.49,0,0,0,16.75,3l-5.94-18c-2.49-.41-5-.94-7.43-1.58s-4.92-1.4-7.23-2.23-4.44-1.72-6.44-2.66a53.88,53.88,0,0,1-5-2.69l-17.18,4.35q-.93-1.72-1.82-3.44l15.3-3.46a21.06,21.06,0,0,1-3-2.81,10.47,10.47,0,0,1-1.66-2.59,5.36,5.36,0,0,1-.48-2.29,4.07,4.07,0,0,1,.32-1.46h0l-17.88-3.13a212.7,212.7,0,0,1-11-33.61,218.62,218.62,0,0,1,124.47,0A215.22,215.22,0,0,1,437.21,309.56Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M404.21,299.19a1.26,1.26,0,0,1-.19.6,2.41,2.41,0,0,1-1.17.87,7.83,7.83,0,0,1-2.21.48,18.19,18.19,0,0,1-3.17,0l3,6.81a35.67,35.67,0,0,0,8.59-.07,11.28,11.28,0,0,0,4.94-1.72,3.23,3.23,0,0,0,1.5-2.67,4.59,4.59,0,0,0-.88-2.46Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M399.36,298a.82.82,0,0,0-.05-.83,3.19,3.19,0,0,0-.91-.93,9.08,9.08,0,0,0-1.5-.87c-.28-.13-.59-.26-.9-.39v-1.43l.7.22c.91.31,1.77.65,2.57,1a19.43,19.43,0,0,1,2.21,1.17,11.09,11.09,0,0,1,1.24.9l9.6,1.72a25.61,25.61,0,0,0-3.57-2.49,44.06,44.06,0,0,0-4.88-2.44c-1.7-.73-3.53-1.41-5.42-2-.8-.25-1.62-.49-2.45-.72v-1.29c.9.24,1.8.49,2.67.75q1.62.49,3.2,1t3.11,1.16l4.12-.93q-2.17-.83-4.41-1.6t-4.47-1.43c-1.39-.41-2.8-.81-4.22-1.18V268.53c6.92-3.71,14.63,1.91,19.6-8.18-6.67,2.06-10.74-3.44-19.6-3.52h-4.11v37.09c-.38,0-.74-.08-1.08-.09a7.64,7.64,0,0,0-1.64.1,2.5,2.5,0,0,0-1.08.42.75.75,0,0,0-.31.75,1.87,1.87,0,0,0,.65,1,7.13,7.13,0,0,0,1.5,1,14.55,14.55,0,0,0,2.15.88,17.68,17.68,0,0,0,2.51.62,13.14,13.14,0,0,0,2.31.2,5.66,5.66,0,0,0,1.64-.22A1.42,1.42,0,0,0,399.36,298Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M420.08,296.54c-1.42-.75-2.88-1.46-4.36-2.14-1-.44-1.93-.85-2.91-1.27l-4.1,1c.55.25,1.11.5,1.64.77,1,.49,1.91,1,2.81,1.51s1.81,1.09,2.64,1.65c.68.46,1.31.94,1.92,1.42l10.37,1.86c-1.19-.83-2.41-1.63-3.67-2.39S421.56,297.31,420.08,296.54Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M373.58,287l-6.84-3.44c-1.61,0-3.2.1-4.75.23s-3.31.34-4.88.61a41.73,41.73,0,0,0-4.79,1.09,28.35,28.35,0,0,0-4,1.54l15.92,2.85a8.68,8.68,0,0,1,1.6-1,14.53,14.53,0,0,1,2.37-.91,23.15,23.15,0,0,1,2.69-.61C371.72,287.23,372.63,287.12,373.58,287Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M379.35,286.93c1.05,0,2.14.11,3.24.21s2.2.23,3.33.38,2.07.31,3.13.5l-.78-2.38c-1.52-.3-3-.57-4.51-.8s-3.21-.46-4.78-.64-3.21-.32-4.79-.43c-.65,0-1.29-.06-1.94-.09l6.5,3.22Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M378.73,288.8a19,19,0,0,0-4.45.83,6.74,6.74,0,0,0-2.76,1.61l11.66,2.09a2.38,2.38,0,0,1,.8-.6,6.46,6.46,0,0,1,1.76-.48,14.34,14.34,0,0,1,2.29-.13,23.21,23.21,0,0,1,2.42.18l-.94-2.85a54.31,54.31,0,0,0-5.52-.66A37.25,37.25,0,0,0,378.73,288.8Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M389.6,299.32a24.4,24.4,0,0,1-3.15-1.41,13,13,0,0,1-2.27-1.52,5.8,5.8,0,0,1-.82-.86l-12.74-2.23a4.88,4.88,0,0,0,1.17,2.94,18.11,18.11,0,0,0,4.83,4.08,46.25,46.25,0,0,0,8.35,4,64.68,64.68,0,0,0,10.4,2.87l-2.24-6.81A31.78,31.78,0,0,1,389.6,299.32Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+          </svg>
+        </figure>
+        <figure
+          class="nav-logo nav-logo--wordmark"
+          aria-hidden="true"
+          aria-label="Topgolf wordmark logo"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 360 60"
+            role="img"
+            aria-label="Topgolf Wordmark"
+          >
+            <title>Topgolf Logo Horizontal</title>
+            <path
+              d="M253.82,325.69h0a2.68,2.68,0,1,1,5.36,0v0a2.68,2.68,0,1,1-5.36,0Zm5,0v0a2.26,2.26,0,0,0-2.28-2.29,2.29,2.29,0,0,0-2.28,2.31h0a2.28,2.28,0,1,0,4.56,0Zm-3.34-1.4h1.25c.62,0,1.08.29,1.08.89a.82.82,0,0,1-.59.83l.68,1h-.78l-.58-.84h-.41V327h-.65Zm1.21,1.31c.29,0,.46-.15.46-.37s-.18-.37-.46-.37h-.56v.74Z"
+              transform="translate(-216 -280.17)"
+            ></path>
+            <path
+              d="M243.25,280.17A85.08,85.08,0,0,0,216,284.62a85.6,85.6,0,0,0,27.25,47.2,85.6,85.6,0,0,0,27.25-47.2A85.08,85.08,0,0,0,243.25,280.17Zm15.6,27.18-.1-.09a10.81,10.81,0,0,0-.93-1,13.71,13.71,0,0,0-1.11-1l-4.21-.74c.15.18.29.35.4.51a2.89,2.89,0,0,1,.39.76,1.8,1.8,0,0,1,.11.74,1.53,1.53,0,0,1-.11.48l4.5,2.23-.54.93-4.63-2.33a3.83,3.83,0,0,1-.88.49,7,7,0,0,1-1.45.41,13.77,13.77,0,0,1-2,.2,23.62,23.62,0,0,1-2.46-.08l3,6.75a26,26,0,0,0,5.07-.31,80.73,80.73,0,0,1-10.65,12.29,81.72,81.72,0,0,1-13.93-17.32,37.92,37.92,0,0,0,4.29,2.05,46.31,46.31,0,0,0,6,1.95,47.22,47.22,0,0,0,6.34,1.15l-2.25-6.83c-.94-.16-1.88-.36-2.81-.6s-1.86-.53-2.74-.84-1.68-.65-2.43-1a20.83,20.83,0,0,1-1.9-1l-6.5,1.65-.69-1.31,5.79-1.31a7.69,7.69,0,0,1-1.12-1.06,4.24,4.24,0,0,1-.63-1,2,2,0,0,1-.18-.87,1.75,1.75,0,0,1,.12-.55h0l-6.77-1.18a80.37,80.37,0,0,1-4.14-12.72,82.6,82.6,0,0,1,47.11,0A81.36,81.36,0,0,1,258.85,307.35Z"
+              transform="translate(-216 -280.17)"
+            ></path>
+            <path
+              d="M246.36,303.42a.48.48,0,0,1-.07.23.93.93,0,0,1-.44.33,2.93,2.93,0,0,1-.84.18,6.93,6.93,0,0,1-1.2,0l1.13,2.58a13.82,13.82,0,0,0,3.25,0,4.19,4.19,0,0,0,1.87-.65,1.23,1.23,0,0,0,.57-1,1.7,1.7,0,0,0-.33-.93Z"
+              transform="translate(-216 -280.17)"
+            ></path>
+            <path
+              d="M244.52,303a.31.31,0,0,0,0-.32,1.44,1.44,0,0,0-.35-.35,3.3,3.3,0,0,0-.57-.33l-.34-.15v-.54l.27.08c.34.12.67.25,1,.39a8,8,0,0,1,.83.44,3.59,3.59,0,0,1,.47.35l3.64.65a10.35,10.35,0,0,0-1.35-.95,17.71,17.71,0,0,0-1.85-.92c-.64-.28-1.34-.53-2-.76q-.45-.15-.93-.27v-.49l1,.28c.41.13.82.26,1.21.4s.8.28,1.18.43l1.56-.35c-.55-.21-1.11-.41-1.67-.6s-1.12-.37-1.69-.54-1.06-.31-1.6-.45v-7.15c2.62-1.4,5.54.73,7.42-3.09-2.52.78-4.06-1.3-7.42-1.33h-1.56v14l-.4,0a2.47,2.47,0,0,0-.63,0,.9.9,0,0,0-.41.16.28.28,0,0,0-.11.28.67.67,0,0,0,.24.36,2.68,2.68,0,0,0,.57.38,6.17,6.17,0,0,0,.81.34,8.8,8.8,0,0,0,1,.23,4.76,4.76,0,0,0,.87.08,2.11,2.11,0,0,0,.63-.09A.53.53,0,0,0,244.52,303Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M252.37,302.42c-.54-.28-1.09-.56-1.65-.81-.36-.17-.73-.33-1.1-.48l-1.56.39.62.29c.37.18.72.37,1.06.57s.69.41,1,.62.5.36.73.54l3.93.71c-.45-.32-.92-.62-1.39-.91S252.93,302.71,252.37,302.42Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M234.77,298.82l-2.59-1.3q-.92,0-1.8.09c-.63.05-1.25.13-1.85.23a14.09,14.09,0,0,0-1.81.41,10.58,10.58,0,0,0-1.53.58l6,1.08a4,4,0,0,1,.61-.39,5.27,5.27,0,0,1,.9-.34,8.86,8.86,0,0,1,1-.23C234.06,298.89,234.41,298.85,234.77,298.82Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M237,298.78c.4,0,.81,0,1.23.08l1.26.15c.39.05.78.11,1.18.19l-.29-.9c-.58-.12-1.15-.22-1.71-.31l-1.81-.24c-.61-.07-1.22-.12-1.81-.16l-.74,0,2.47,1.22Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M236.72,299.49a7.08,7.08,0,0,0-1.69.31,2.54,2.54,0,0,0-1.05.61l4.42.79a.91.91,0,0,1,.3-.23,2.7,2.7,0,0,1,.67-.18,5.83,5.83,0,0,1,.87-.05c.28,0,.59,0,.91.07l-.35-1.08a20.76,20.76,0,0,0-2.09-.25A14.56,14.56,0,0,0,236.72,299.49Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M240.83,303.47a9,9,0,0,1-1.2-.53,5.2,5.2,0,0,1-.85-.58,3.21,3.21,0,0,1-.32-.32l-4.82-.85a2,2,0,0,0,.44,1.12,7.06,7.06,0,0,0,1.83,1.54,17.6,17.6,0,0,0,3.16,1.51,24.25,24.25,0,0,0,3.94,1.09l-.85-2.58A12.91,12.91,0,0,1,240.83,303.47Z"
+              transform="translate(-324 -237.77)"
+            ></path>
+            <path
+              d="M552.29,321.47v0a2.7,2.7,0,0,1,2.69-2.69,2.67,2.67,0,0,1,2.68,2.68h0a2.69,2.69,0,1,1-5.37,0Zm5,0h0a2.28,2.28,0,1,0-4.56,0v0a2.26,2.26,0,0,0,2.28,2.29A2.29,2.29,0,0,0,557.26,321.45Zm-3.35-1.39h1.26c.62,0,1.08.29,1.08.89a.83.83,0,0,1-.59.83l.68,1h-.78l-.58-.84h-.42v.84h-.65Zm1.22,1.31c.29,0,.46-.15.46-.37s-.18-.37-.46-.37h-.57v.74Z"
+              transform="translate(-216 -280.17)"
+            ></path>
+            <polygon
+              points="61.57 6.65 60.74 16.11 74.68 16.11 72.24 43.98 81.7 43.98 84.14 16.11 98.07 16.11 98.9 6.65 61.57 6.65"
+            ></polygon>
+            <path
+              d="M486,286.83H467.39a12.18,12.18,0,0,0-11.88,10.92l-1.35,15.48a9.86,9.86,0,0,0,10,10.92H482.7a12.17,12.17,0,0,0,11.88-10.92l1.36-15.48A9.86,9.86,0,0,0,486,286.83Zm-.85,26.4a1.62,1.62,0,0,1-1.59,1.46H465a1.32,1.32,0,0,1-1.33-1.46L465,297.75a1.64,1.64,0,0,1,1.59-1.46h18.58a1.32,1.32,0,0,1,1.34,1.46Z"
+              transform="translate(-216 -280.17)"
+            ></path>
+            <path
+              d="M347.33,286.83H328.75a12.17,12.17,0,0,0-11.88,10.92l-1.36,15.48a9.87,9.87,0,0,0,10,10.92h18.58a12.18,12.18,0,0,0,11.88-10.92l1.35-15.48A9.85,9.85,0,0,0,347.33,286.83Zm-.85,26.4a1.63,1.63,0,0,1-1.59,1.46H326.31a1.31,1.31,0,0,1-1.33-1.46l1.35-15.48a1.62,1.62,0,0,1,1.59-1.46H346.5a1.32,1.32,0,0,1,1.33,1.46Z"
+              transform="translate(-216 -280.17)"
+            ></path>
+            <polygon
+              points="296.52 6.65 287.06 6.65 283.8 43.98 318.03 43.98 318.86 34.52 294.09 34.52 296.52 6.65"
+            ></polygon>
+            <path
+              d="M393.77,286.83h-29.5L361,324.15h9.46l.82-9.28h20a12.18,12.18,0,0,0,11.88-10.93l.54-6.19A9.86,9.86,0,0,0,393.77,286.83Zm0,17.11a1.64,1.64,0,0,1-1.59,1.46h-20l.79-9.11h20a1.32,1.32,0,0,1,1.34,1.46Z"
+              transform="translate(-216 -280.17)"
+            ></path>
+            <path
+              d="M439.08,308.6l-.39,4.63a1.63,1.63,0,0,1-1.59,1.46H418.51a1.32,1.32,0,0,1-1.34-1.46l1.36-15.48a1.62,1.62,0,0,1,1.59-1.46h29.5l.83-9.46H421a12.17,12.17,0,0,0-11.88,10.92l-1.36,15.48a9.87,9.87,0,0,0,10,10.92h23.25a7,7,0,0,0,6.81-6.26l1.35-15.58h-17.5l7.49,6.29"
+              transform="translate(-216 -280.17)"
+            ></path>
+            <polygon
+              points="359.17 16.11 360 6.65 325.77 6.65 322.5 43.98 331.96 43.98 333.05 31.6 354.72 31.6 355.55 22.14 333.88 22.14 334.4 16.11 359.17 16.11"
+            ></polygon>
+          </svg>
+        </figure>
+      </a>
+
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-hidden="true"
+      />
+
+      <button
+        id="nav-toggle-btn"
+        class="nav-toggle-btn"
+        aria-label="Toggle main navigation menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      ></button>
+
+      <nav
+        id="site-nav"
+        class="site-nav"
+        aria-label="Primary site navigation menu"
+      >
+        <ul class="menu-links" aria-label="Main navigation links">
+          <li aria-label="Topgolf Experience navigation item">
+            <a
+              id="nav-link-experience"
+              class="nav-link"
+              href="experience.html"
+              aria-label="Go to Topgolf Experience page"
+              >Experience</a
+            >
+          </li>
+          <li aria-label="Food and Drink navigation item">
+            <a
+              id="nav-link-fnb"
+              class="nav-link"
+              href="food.html"
+              aria-label="Go to Food page"
+              >Food</a
+            >
+          </li>
+          <li aria-label="Pricing navigation item">
+            <a
+              id="nav-link-pricing"
+              class="nav-link"
+              href="pricing.html"
+              aria-label="Go to Pricing page"
+              >Pricing</a
+            >
+          </li>
+          <li aria-label="Contact navigation item">
+            <a
+              id="nav-link-contact"
+              class="nav-link"
+              href="contact.html"
+              aria-label="Go to Contact page"
+              >Contact</a
+            >
+          </li>
+          <li aria-label="Case Study navigation item">
+            <a
+              id="nav-link-study"
+              class="nav-link"
+              href="case-study.html"
+              aria-label="Go to Case Study page"
+              >Study</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content" class="site-main" aria-label="Main content area">
+      <section
+        class="section section--intro"
+        tabindex="0"
+        aria-label="Introduction section"
+      >
+        <figure
+          class="hero-image"
+          aria-label="Topgolf website case study hero image"
+        >
+          <img
+            src="./assets/hero.png"
+            alt="Screenshot of the Topgolf website showing the accessible design and navigation"
+            width="1200"
+            height="600"
+            loading="lazy"
+          />
+        </figure>
+      </section>
+
+      <hr />
+
+      <section id="overview" class="section" aria-label="Overview section">
+        <h2>Overview</h2>
+        <p>
+          This case study documents the design and development of an accessible
+          Topgolf website built using modern web accessibility standards and
+          best practices. Over 10 weeks, I applied foundational accessibility
+          principles across five pages, including a home page, custom form, and
+          three additional content pages. The project emphasizes semantic HTML,
+          keyboard navigation, screen reader optimization, color contrast,
+          responsive design, and accessible forms.
+        </p>
+      </section>
+
+      <hr />
+
+      <section
+        id="context-and-challenge"
+        class="section"
+        aria-label="Context and Challenge section"
+      >
+        <h2>Context and Challenge</h2>
+        <article class="text-wrapper" aria-label="Project Background">
+          <h3 class="details-column-heading">Project Background</h3>
+          <p>
+            Topgolf is a sports entertainment venue, and the goal was to create
+            an accessible website that accurately represents the brand while
+            ensuring all users could access all core information and features.
+            This project was conducted solo over 10 weeks with feedback from
+            peers and instructor aligned to web accessibility standards (WCAG
+            2.1 Level AA).
+          </p>
+        </article>
+        <article class="text-wrapper" aria-label="The Problem">
+          <h3 class="details-column-heading">The Problem</h3>
+          <p>
+            Many commercial websites, even large brands, fail to prioritize
+            accessibility. Users with disabilities often encounter barriers like
+            missing alt text, poor color contrast, inaccessible forms, keyboard
+            navigation gaps, and lack of screen reader support.
+          </p>
+        </article>
+        <article class="text-wrapper" aria-label="Goals and Objectives">
+          <h3 class="details-column-heading">Goals &amp; Objectives</h3>
+          <ul>
+            <li>
+              <strong>Inclusive Design:</strong> Build a site that serves users
+              with visual, motor, and cognitive disabilities without requiring
+              assistive technology workarounds.
+            </li>
+            <li>
+              <strong>Semantic HTML:</strong> Use proper HTML elements to convey
+              meaning and structure to both browsers and assistive technologies.
+            </li>
+            <li>
+              <strong>Accessible Forms:</strong> Create a fully functional
+              contact form with clear labels, error messaging, and keyboard
+              navigation.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <hr />
+
+      <section
+        id="process-and-insight"
+        class="section"
+        aria-label="Process and Insight section"
+      >
+        <h2>Process and Insight</h2>
+        <h4 class="details-column-heading">Week-by-Week Implementation</h4>
+        <p>
+          I built the site iteratively, applying accessibility principles each
+          week as I developed the pages and features:
+        </p>
+        <ul>
+          <li>
+            <strong>Semantic HTML (Week 04):</strong> Used proper heading
+            hierarchy (<code>&lt;h1&gt;–&lt;h6&gt;</code>), landmark roles
+            (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>), and
+            meaningful link text. Avoided generic divs and span-based layouts.
+          </li>
+          <li>
+            <strong>Color &amp; Contrast (Week 02):</strong> Tested all color
+            pairs for minimum 4.5:1 contrast ratio on text and 3:1 on UI
+            components.
+          </li>
+          <li>
+            <strong>Typography (Week 03):</strong> Selected readable font sizes
+            (base 16px), generous line-height (1.5+), and varied font weights.
+            Included a dyslexia-friendly font toggle.
+          </li>
+          <li>
+            <strong>Keyboard Navigation:</strong> Mapped all interactive
+            elements to keyboard (Tab, Shift+Tab, Enter, Space). Ensured focus
+            indicators were visible and logical.
+          </li>
+          <li>
+            <strong>Forms (Week 06):</strong> Implemented accessible form
+            patterns: proper label-to-input associations, error messaging,
+            required field indicators, and real-time validation feedback.
+          </li>
+          <li>
+            <strong>Multimedia (Week 07):</strong> Added descriptive alt text to
+            all images and video to ensure all visual content is accessible.
+          </li>
+          <li>
+            <strong>Skip Navigation:</strong> Provided a skip-to-content link
+            for keyboard users to bypass repetitive navigation.
+          </li>
+        </ul>
+        <h4 class="details-column-heading">Pages Built</h4>
+        <ul>
+          <li>
+            <strong>Index (Home):</strong> Landing page with hero section and
+            introductory content
+          </li>
+          <li>
+            <strong>Experience:</strong> Multi-section page describing Topgolf's
+            offering, with FAQs
+          </li>
+          <li><strong>Food:</strong> Menu and food/beverage showcase</li>
+          <li><strong>Pricing:</strong> Bay rates and membership options</li>
+          <li>
+            <strong>Contact (Form Page):</strong> Fully accessible contact form
+            with validation
+          </li>
+        </ul>
+        <h4 class="details-column-heading">Key Accessibility Patterns</h4>
+        <p>
+          Throughout development, I relied on proven accessibility patterns and
+          tested them iteratively:
+        </p>
+        <ul>
+          <li>
+            <strong>ARIA Labels &amp; Roles:</strong> Applied
+            <code>aria-label</code>, <code>aria-labelledby</code>,
+            <code>aria-hidden</code>, and landmark roles where semantic HTML
+            wasn't sufficient
+          </li>
+          <li>
+            <strong>Focus Management:</strong> Implemented visible focus
+            indicators and logical tab order
+          </li>
+          <li>
+            <strong>Error Prevention &amp; Recovery:</strong> Form fields
+            included inline validation, clear error messages linked to inputs
+          </li>
+          <li>
+            <strong>Responsive Images:</strong> Used responsive image techniques
+            with appropriate alt text and lazy loading
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="solution" class="section" aria-label="Solution section">
+        <h2>Solution</h2>
+        <p>
+          The final implementation is a fully accessible, five-page Topgolf
+          website that meets WCAG 2.1 Level AA standards. The site is built on a
+          foundation of semantic HTML, comprehensive ARIA support,
+          keyboard-friendly navigation, and inclusive form design. Below is a
+          snapshot of the core accessibility features implemented across the
+          site.
+        </p>
+
+        <h4 class="details-column-heading">Semantic HTML Foundation</h4>
+        <p>
+          Every page uses proper semantic HTML to establish document structure
+          and meaning:
+        </p>
+        <pre><code>&lt;!-- Semantic Structure --&gt;
+&lt;header&gt;&lt;/header&gt;   &lt;!-- Contains logo, nav, branding --&gt;
+&lt;main&gt;&lt;/main&gt;       &lt;!-- Primary content area --&gt;
+&lt;section&gt;&lt;/section&gt; &lt;!-- Major content sections --&gt;
+&lt;footer&gt;&lt;/footer&gt;   &lt;!-- Metadata, copyright, footer nav --&gt;
+
+&lt;!-- Heading Hierarchy (never skip levels) --&gt;
+&lt;h1&gt;Page Title&lt;/h1&gt;
+&lt;h2&gt;Major Section&lt;/h2&gt;
+&lt;h3&gt;Subsection&lt;/h3&gt;
+</code></pre>
+
+        <h4 class="details-column-heading">Accessible Form Implementation</h4>
+        <p>
+          The contact form demonstrates accessible form patterns with proper
+          label associations, error recovery, and validation feedback:
+        </p>
+        <pre><code>&lt;!-- Each input properly associated with a label --&gt;
+&lt;label for="email-input"&gt;Email Address &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+&lt;input
+  id="email-input"
+  type="email"
+  name="email"
+  required
+  aria-required="true"
+  aria-invalid="false"
+  aria-describedby="email-error"
+/&gt;
+&lt;span id="email-error" class="error-message" role="alert"&gt;&lt;/span&gt;
+
+&lt;!-- Fieldset groups related inputs --&gt;
+&lt;fieldset&gt;
+  &lt;legend&gt;What is your interest?&lt;/legend&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox" name="interest" value="golf" /&gt;
+    Golf Experience
+  &lt;/label&gt;
+  &lt;!-- More options... --&gt;
+&lt;/fieldset&gt;
+</code></pre>
+
+        <h4 class="details-column-heading">
+          Color Contrast &amp; Visual Design
+        </h4>
+        <p>
+          All text meets or exceeds WCAG AA contrast requirements (4.5:1 for
+          normal text, 3:1 for large text and UI components). The color palette
+          was tested with:
+        </p>
+        <ul>
+          <li>
+            <a
+              style="text-decoration: underline"
+              target="_blank"
+              href="https://colourcontrast.cc/"
+              >Colour Contrast Checker</a
+            >
+          </li>
+          <li>Chrome DevTools Contrast Validation</li>
+        </ul>
+
+        <h4 class="details-column-heading">
+          Keyboard Navigation &amp; Focus Management
+        </h4>
+        <p>The entire site is fully navigable via keyboard:<br /></p>
+        <ul>
+          <li><strong>Tab:</strong> Move to next interactive element</li>
+          <li>
+            <strong>Shift + Tab:</strong> Move to previous interactive element
+          </li>
+          <li>
+            <strong>Arrow Keys:</strong> Navigate within menus and form controls
+            (radio buttons)
+          </li>
+          <li><strong>Enter / Space:</strong> Activate buttons and links</li>
+        </ul>
+        <p>
+          All interactive elements have visible focus indicators with sufficient
+          contrast. The skip-to-content link is the first focusable element and
+          allows users to bypass navigation.
+        </p>
+
+        <h4 class="details-column-heading">Screen Reader Optimization</h4>
+        <p>
+          ARIA attributes support screen reader users where semantic HTML alone
+          isn't sufficient:
+        </p>
+        <ul>
+          <li>
+            <strong>Image Alt Text:</strong> Descriptive, concise, and
+            contextual (e.g., "Topgolf bay with golf simulator screens and
+            hitting area")
+          </li>
+          <li>
+            <strong>Icon Labels:</strong> Icons have <code>aria-label</code> or
+            <code>aria-labelledby</code> attributes
+          </li>
+          <li>
+            <strong>Form Validation:</strong> Errors are announced via
+            <code>role="alert"</code> and linked via
+            <code>aria-describedby</code>
+          </li>
+          <li>
+            <strong>Dynamic Content:</strong> Updates are announced using
+            <code>aria-live</code> regions where appropriate
+          </li>
+        </ul>
+
+        <h4 class="details-column-heading">
+          Responsive &amp; Accessible Layout
+        </h4>
+        <p>
+          The site is fully responsive, testing from mobile (320px) to desktop
+          (1920px+). Font sizes, padding, and spacing scale appropriately.
+          Buttons and interactive targets are at least 48x48 pixels for easier
+          touch interaction, and text is resizable up to 200% without loss of
+          functionality.
+        </p>
+
+        <h4 class="details-column-heading">Additional Features</h4>
+        <ul>
+          <li>
+            <strong>Dark Mode Support:</strong> Respects system preference via
+            <code>prefers-color-scheme</code>
+          </li>
+          <li>
+            <strong>Dyslexia-Friendly Font Toggle:</strong> Users can switch to
+            Open Dyslexic font
+          </li>
+          <li>
+            <strong>Motion Preferences:</strong> Reduced motion respected for
+            animations
+          </li>
+          <li>
+            <strong>Skip Links:</strong> Prominent skip-to-content link for
+            keyboard users
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="results-and-takeaways" class="section">
+        <h2>Results &amp; Takeaways</h2>
+        <h4 class="details-column-heading">Key Achievements</h4>
+        <ul class="metric-list" style="margin-top: 1rem">
+          <li>
+            <strong>WCAG 2.1 Level AA Compliant:</strong> All pages pass QA
+            testing.
+          </li>
+          <li>
+            <strong>Fully Keyboard Accessible:</strong> 100% of interactive
+            elements are keyboard-navigable with clear focus indicators.
+          </li>
+          <li>
+            <strong>Screen Reader Tested:</strong> Content is properly
+            structured and labeled for VoiceOver screen readers.
+          </li>
+          <li>
+            <strong>Accessible Forms:</strong> Contact form includes proper
+            labels, error messaging, and inline validation without disrupting
+            user flow.
+          </li>
+          <li>
+            <strong>Inclusive UX:</strong> Features like dyslexia-friendly
+            fonts, high-contrast modes, and motion preferences demonstrate
+            commitment to diverse needs.
+          </li>
+          <li>
+            <strong>Mobile &amp; Responsive:</strong> Accessible across devices
+            without loss of functionality or comprehension.
+          </li>
+        </ul>
+
+        <h4 class="details-column-heading">Lessons Learned</h4>
+        <p>
+          Building this site reinforced several core insights about accessible
+          design:
+        </p>
+        <ul>
+          <li>
+            <strong>Testing is essential:</strong> I relied heavily on manual
+            testing with keyboard navigation and screen readers to catch minor
+            issues. I also had peers test to get real-world feedback that I did
+            not catch prior.
+          </li>
+          <li>
+            <strong>Semantic HTML is very important:</strong> Proper use of
+            <code>&lt;button&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;h1&gt;-&lt;h6&gt;</code> provides 80% of accessibility
+            value with minimal effort.
+          </li>
+          <li>
+            <strong>Inclusive design benefits everyone:</strong> Clear labels,
+            high contrast, and keyboard navigation improve the experience for
+            all users, not just those with disabilities.
+          </li>
+        </ul>
+
+        <h4 class="details-column-heading">Conclusion</h4>
+        <p>
+          This 10-week project helped me understand the importance of
+          accessibility in web development and how it can enhance the overall
+          user experience. Because I was able to put this into practice, I now
+          have a much deeper understanding of writing cleaner code with
+          accessibility in mind, and I am more confident in my ability to create
+          inclusive digital experiences that meet the needs of all users.
+        </p>
+      </section>
+    </main>
+    <footer
+      class="site-footer"
+      aria-labelledby="footer-heading"
+      aria-label="Site footer"
+    >
+      <small class="footer-meta" aria-label="Footer copyright">
+        <p
+          class="footer-meta-line"
+          aria-label="Copyright 2026 Topgolf International, Inc."
+        >
+          ©2026 Topgolf International, Inc.
+        </p>
+        <p class="footer-meta-line" aria-label="All rights reserved.">
+          All rights reserved.
+        </p>
+      </small>
+    </footer>
+    <script src="script/main.js"></script>
+    <script src="script/dyslexia-mode.js"></script>
+  </body>
+</html>

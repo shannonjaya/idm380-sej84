@@ -277,3 +277,39 @@ figure.hero-wordmark {
     color: #333;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--neutral-white);
+    background-color: var(--neutral-black);
+  }
+
+  .experience-section {
+    background-color: #0f1419;
+  }
+
+  .experience-title strong {
+    color: var(--primary-light);
+  }
+
+  article.faq-card, article.card {
+    background-color: #f1f9ff16;
+  }
+
+  .faq-icon {
+    color: #f1f9ffe2;
+  }
+
+  a.highlighted-link {
+    color: var(--primary-light);
+    border-bottom: 2px solid var(--tertiary-light);
+  }
+
+  .experience-title {
+    color: var(--neutral-white);
+  }
+
+  .experience-content p {
+    color: var(--neutral-white);
+  }
+}

@@ -246,6 +246,53 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--neutral-white);
+    background-color: var(--neutral-black);
+  }
+
+  #contact-hero {
+    background-color: var(--primary-dark);
+    color: var(--neutral-white);
+  }
+
+  h1#contact-page-title {
+    color: var(--neutral-white);
+  }
+
+  #contact-hero p {
+    color: var(--neutral-white);
+  }
+
+  .form-content {
+    background-color: #1a1a1a;
+    color: var(--neutral-white);
+  }
+
+  label {
+    color: var(--neutral-white);
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: #0f1419;
+    color: var(--neutral-white);
+    border-color: #333;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+  }
+
+  p {
+    color: var(--neutral-white);
+  }
+}
+
 /* RESPONSIVE STYLES */
 
 /* MOBILE STYLES */

@@ -326,6 +326,7 @@ article.event-content {
     display: flex !important;
     flex-direction: column !important;
     gap: calc(var(--rhythm) * 0.5) !important;
+    padding: calc(var(--rhythm) * 1);
   }
 
   figure.feature-media {
@@ -372,7 +373,6 @@ article.event-content {
 
   /* CARDS */
   article.card {
-    display: grid !important;
     grid-template-columns: 40% 1fr;
     gap: 1rem;
     align-items: start;
@@ -390,13 +390,8 @@ article.event-content {
   }
 
   section.venue-info-section {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  article.card,
-  article.safety-card {
-    grid-column: auto;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
   }
 
   aside.app-info {
@@ -419,6 +414,109 @@ article.event-content {
     grid-column: 1 / -1;
     grid-row: auto;
     padding: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--neutral-white);
+    background-color: var(--neutral-black);
+  }
+
+  section.section--steps {
+    background-color: #0f1419;
+  }
+
+  .step-title {
+    background-color: #1a1a1a;
+    color: var(--secondary-mid);
+  }
+
+  .step-description {
+    color: var(--neutral-white);
+  }
+
+  article.faq-card {
+    background-color: #1a1a1a;
+    color: var(--neutral-white);
+  }
+
+  .faq-title {
+    color: var(--neutral-white);
+  }
+
+  .faq-text {
+    color: var(--neutral-white);
+  }
+
+  article.card {
+    background-color: #1a1a1a;
+    color: var(--neutral-white);
+  }
+
+  .card-title {
+    color: var(--neutral-white);
+  }
+
+  .card-text {
+    color: var(--neutral-white);
+  }
+
+  article.safety-card {
+    background-color: #0004ff;
+    color: var(--neutral-white);
+  }
+
+  .safety-title {
+    color: var(--neutral-white);
+  }
+
+  .safety-text {
+    color: var(--neutral-white);
+  }
+
+  aside.app-info {
+    border-color: var(--secondary-mid);
+    background-color: #1a1a1a;
+    color: var(--neutral-white);
+  }
+
+  .app-info-title {
+    color: var(--neutral-white);
+  }
+
+  .app-info-text {
+    color: var(--neutral-white);
+  }
+
+  section.event-callout {
+    background-color: #0f1419;
+  }
+
+  article.event-content {
+    background-color: var(--primary-dark);
+    color: var(--neutral-white);
+  }
+
+  .event-title {
+    color: var(--neutral-white);
+  }
+
+  .event-text {
+    color: var(--neutral-white);
+  }
+
+  p {
+    color: var(--neutral-white);
+  }
+
+  h2, h3, h4 {
+    color: var(--neutral-white);
+  }
+
+  a.highlighted-link {
+    color: var(--primary-light);
+    border-bottom: 2px solid var(--tertiary-light);
   }
 }
 
