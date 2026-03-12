@@ -237,15 +237,13 @@
       </nav>
     </header>
 
-    <main id="content" class="site-main" aria-label="Main content area">
+    <main id="content" class="site-main">
       <section
         class="section section--intro"
         tabindex="0"
-        aria-label="Introduction section"
       >
         <figure
           class="hero-image"
-          aria-label="Topgolf website case study hero image"
         >
           <img
             src="./assets/hero.webp"
@@ -259,7 +257,9 @@
 
       <hr />
 
-      <section id="overview" class="section" aria-label="Overview section">
+      <section
+        id="overview" class="section"
+      >
         <h2>Overview</h2>
         <p>
           This case study documents the design and development of an accessible
@@ -277,10 +277,9 @@
       <section
         id="context-and-challenge"
         class="section"
-        aria-label="Context and Challenge section"
       >
         <h2>Context and Challenge</h2>
-        <article class="text-wrapper" aria-label="Project Background">
+        <article class="text-wrapper">
           <h3 class="details-column-heading">Project Background</h3>
           <p>
             Topgolf is a sports entertainment venue, and the goal was to create
@@ -291,7 +290,7 @@
             2.1 Level AA).
           </p>
         </article>
-        <article class="text-wrapper" aria-label="The Problem">
+        <article class="text-wrapper">
           <h3 class="details-column-heading">The Problem</h3>
           <p>
             Many commercial websites, even large brands, fail to prioritize
@@ -300,19 +299,19 @@
             navigation gaps, and lack of screen reader support.
           </p>
         </article>
-        <article class="text-wrapper" aria-label="Goals and Objectives">
+        <article class="text-wrapper">
           <h3 class="details-column-heading">Goals &amp; Objectives</h3>
-          <ul aria-label="Project goals and objectives">
-            <li aria-label="Goal: Inclusive Design">
+          <ul>
+            <li>
               <strong>Inclusive Design:</strong> Build a site that serves users
               with visual, motor, and cognitive disabilities without requiring
               assistive technology workarounds.
             </li>
-            <li aria-label="Goal: Semantic HTML">
+            <li>
               <strong>Semantic HTML:</strong> Use proper HTML elements to convey
               meaning and structure to both browsers and assistive technologies.
             </li>
-            <li aria-label="Goal: Accessible Forms">
+            <li>
               <strong>Accessible Forms:</strong> Create a fully functional
               contact form with clear labels, error messaging, and keyboard
               navigation.
@@ -326,7 +325,6 @@
       <section
         id="process-and-insight"
         class="section"
-        aria-label="Process and Insight section"
       >
         <h2>Process and Insight</h2>
         <h4 class="details-column-heading">Week-by-Week Implementation</h4>
@@ -334,46 +332,45 @@
           I built the site iteratively, applying accessibility principles each
           week as I developed the pages and features:
         </p>
-        <ul aria-label="Week-by-week implementation of accessibility features">
-          <li aria-label="Week 04: Semantic HTML - proper heading hierarchy and landmark roles">
+        <ul>
+          <li>
             <strong>Semantic HTML (Week 04):</strong> Used proper heading
             hierarchy (<code>&lt;h1&gt;–&lt;h6&gt;</code>), landmark roles
             (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
             <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>), and
             meaningful link text. Avoided generic divs and span-based layouts.
           </li>
-          <li aria-label="Week 02: Color and Contrast - tested 4.5:1 contrast ratio">
+          <li>
             <strong>Color &amp; Contrast (Week 02):</strong> Tested all color
             pairs for minimum 4.5:1 contrast ratio on text and 3:1 on UI
             components.
           </li>
-          <li aria-label="Week 03: Typography - readable font sizes and dyslexia-friendly toggle">
+          <li>
             <strong>Typography (Week 03):</strong> Selected readable font sizes
             (base 16px), generous line-height (1.5+), and varied font weights.
             Included a dyslexia-friendly font toggle.
           </li>
-          <li aria-label="Keyboard Navigation - Tab, Shift+Tab, Enter, Space with visible focus indicators">
+          <li>
             <strong>Keyboard Navigation:</strong> Mapped all interactive
             elements to keyboard (Tab, Shift+Tab, Enter, Space). Ensured focus
             indicators were visible and logical.
           </li>
-          <li aria-label="Week 06: Forms - proper label associations and validation feedback">
+          <li>
             <strong>Forms (Week 06):</strong> Implemented accessible form
             patterns: proper label-to-input associations, error messaging,
             required field indicators, and real-time validation feedback.
           </li>
-          <li aria-label="Week 07: Multimedia - descriptive alt text for all images and video">
+          <li>
             <strong>Multimedia (Week 07):</strong> Added descriptive alt text to
             all images and video to ensure all visual content is accessible.
           </li>
-          <li aria-label="Skip Navigation - skip-to-content link for keyboard users">
+          <li>
             <strong>Skip Navigation:</strong> Provided a skip-to-content link
             for keyboard users to bypass repetitive navigation.
           </li>
         </ul>
          <figure
           class="hero-image"
-          aria-label="Topgolf website case study color contrast image"
         >
           <img
             src="./assets/color-contrast-check.webp"
@@ -384,18 +381,18 @@
           />
         </figure>
         <h4 class="details-column-heading" id="pages-built">Pages Built</h4>
-        <ul aria-labelledby="pages-built">
-          <li aria-label="Index page - Landing page with hero section">
+        <ul>
+          <li>
             <strong>Index (Home):</strong> Landing page with hero section and
             introductory content
           </li>
-          <li aria-label="Experience page - Multi-section page with FAQs">
+          <li>
             <strong>Experience:</strong> Multi-section page describing Topgolf's
             offering, with FAQs
           </li>
-          <li aria-label="Food page - Menu and beverage showcase"><strong>Food:</strong> Menu and food/beverage showcase</li>
-          <li aria-label="Pricing page - Bay rates and membership options"><strong>Pricing:</strong> Bay rates and membership options</li>
-          <li aria-label="Contact page - Fully accessible form with validation">
+          <li><strong>Food:</strong> Menu and food/beverage showcase</li>
+          <li><strong>Pricing:</strong> Bay rates and membership options</li>
+          <li>
             <strong>Contact (Form Page):</strong> Fully accessible contact form
             with validation
           </li>
@@ -405,22 +402,22 @@
           Throughout development, I relied on proven accessibility patterns and
           tested them iteratively:
         </p>
-        <ul aria-label="Key accessibility patterns used during development">
-          <li aria-label="Pattern: ARIA Labels and Roles - aria-label, aria-labelledby, aria-hidden, landmark roles">
+        <ul>
+          <li>
             <strong>ARIA Labels &amp; Roles:</strong> Applied
             <code>aria-label</code>, <code>aria-labelledby</code>,
             <code>aria-hidden</code>, and landmark roles where semantic HTML
             wasn't sufficient
           </li>
-          <li aria-label="Pattern: Focus Management - visible indicators with logical tab order">
+          <li>
             <strong>Focus Management:</strong> Implemented visible focus
             indicators and logical tab order
           </li>
-          <li aria-label="Pattern: Error Prevention and Recovery - inline validation with clear messages">
+          <li>
             <strong>Error Prevention &amp; Recovery:</strong> Form fields
             included inline validation, clear error messages linked to inputs
           </li>
-          <li aria-label="Pattern: Responsive Images - responsive techniques with alt text and lazy loading">
+          <li>
             <strong>Responsive Images:</strong> Used responsive image techniques
             with appropriate alt text and lazy loading
           </li>
@@ -429,7 +426,7 @@
 
       <hr />
 
-      <section id="solution" class="section" aria-label="Solution section">
+      <section id="solution" class="section">
         <h2>Solution</h2>
         <p>
           The final implementation is a fully accessible, five-page Topgolf
@@ -441,7 +438,6 @@
         </p>
          <figure
           class="hero-image"
-          aria-label="Topgolf website case study solution image"
         >
           <img
             src="./assets/solution.webp"
@@ -457,7 +453,7 @@
           Every page uses proper semantic HTML to establish document structure
           and meaning:
         </p>
-        <pre><code aria-label="Example HTML code showing semantic structure with header, main, section, and footer elements plus heading hierarchy">&lt;!-- Semantic Structure --&gt;
+        <pre><code>&lt;!-- Semantic Structure --&gt;
 &lt;header&gt;&lt;/header&gt;   &lt;!-- Contains logo, nav, branding --&gt;
 &lt;main&gt;&lt;/main&gt;       &lt;!-- Primary content area --&gt;
 &lt;section&gt;&lt;/section&gt; &lt;!-- Major content sections --&gt;
@@ -474,7 +470,7 @@
           The contact form demonstrates accessible form patterns with proper
           label associations, error recovery, and validation feedback:
         </p>
-        <pre><code aria-label="Example HTML code showing accessible form implementation with input labels, required attributes, error messaging, and fieldset grouping">&lt;!-- Each input properly associated with a label --&gt;
+        <pre><code>&lt;!-- Each input properly associated with a label --&gt;
 &lt;label for="email-input"&gt;Email Address &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
 &lt;input
   id="email-input"
@@ -506,33 +502,32 @@
           normal text, 3:1 for large text and UI components). The color palette
           was tested with:
         </p>
-        <ul aria-label="Tools used for color contrast testing">
-          <li aria-label="Colour Contrast Checker tool">
+        <ul>
+          <li>
             <a
               style="text-decoration: underline"
               target="_blank"
               href="https://colourcontrast.cc/"
-              aria-label="Colour Contrast Checker (opens in new tab)"
               >Colour Contrast Checker</a
             >
           </li>
-          <li aria-label="Chrome DevTools Contrast Validation">Chrome DevTools Contrast Validation</li>
+          <li>Chrome DevTools Contrast Validation</li>
         </ul>
 
         <h4 class="details-column-heading">
           Keyboard Navigation &amp; Focus Management
         </h4>
         <p>The entire site is fully navigable via keyboard:<br /></p>
-        <ul aria-label="Keyboard navigation controls and shortcuts">
-          <li aria-label="Tab key - Move to next interactive element"><strong>Tab:</strong> Move to next interactive element</li>
-          <li aria-label="Shift plus Tab - Move to previous interactive element">
+        <ul>
+          <li><strong>Tab:</strong> Move to next interactive element</li>
+          <li>
             <strong>Shift + Tab:</strong> Move to previous interactive element
           </li>
-          <li aria-label="Arrow Keys - Navigate within menus and form controls">
+          <li>
             <strong>Arrow Keys:</strong> Navigate within menus and form controls
             (radio buttons)
           </li>
-          <li aria-label="Enter or Space - Activate buttons and links"><strong>Enter / Space:</strong> Activate buttons and links</li>
+          <li><strong>Enter / Space:</strong> Activate buttons and links</li>
         </ul>
         <p>
           All interactive elements have visible focus indicators with sufficient
@@ -545,22 +540,22 @@
           ARIA attributes support screen reader users where semantic HTML alone
           isn't sufficient:
         </p>
-        <ul aria-label="Screen reader optimization techniques">
-          <li aria-label="Image Alt Text - descriptive, concise, and contextual">
+        <ul>
+          <li>
             <strong>Image Alt Text:</strong> Descriptive, concise, and
             contextual (e.g., "Topgolf bay with golf simulator screens and
             hitting area")
           </li>
-          <li aria-label="Icon Labels - using aria-label or aria-labelledby">
+          <li>
             <strong>Icon Labels:</strong> Icons have <code>aria-label</code> or
             <code>aria-labelledby</code> attributes
           </li>
-          <li aria-label="Form Validation - errors announced with role alert and aria-describedby">
+          <li>
             <strong>Form Validation:</strong> Errors are announced via
             <code>role="alert"</code> and linked via
             <code>aria-describedby</code>
           </li>
-          <li aria-label="Dynamic Content - updates announced using aria-live regions">
+          <li>
             <strong>Dynamic Content:</strong> Updates are announced using
             <code>aria-live</code> regions where appropriate
           </li>
@@ -578,20 +573,20 @@
         </p>
 
         <h4 class="details-column-heading" id="additional-features">Additional Features</h4>
-        <ul aria-labelledby="additional-features">
-          <li aria-label="Dark Mode Support - respects system preference">
+        <ul>
+          <li>
             <strong>Dark Mode Support:</strong> Respects system preference via
             <code>prefers-color-scheme</code>
           </li>
-          <li aria-label="Dyslexia-Friendly Font Toggle - switch to Open Dyslexic font">
+          <li>
             <strong>Dyslexia-Friendly Font Toggle:</strong> Users can switch to
             Open Dyslexic font
           </li>
-          <li aria-label="Motion Preferences - reduced motion for animations">
+          <li>
             <strong>Motion Preferences:</strong> Reduced motion respected for
             animations
           </li>
-          <li aria-label="Skip Links - prominent skip-to-content for keyboard users">
+          <li>
             <strong>Skip Links:</strong> Prominent skip-to-content link for
             keyboard users
           </li>
@@ -600,33 +595,33 @@
 
       <hr />
 
-      <section id="results-and-takeaways" class="section" aria-label="Results and Takeaways section">
+      <section id="results-and-takeaways" class="section">
         <h2>Results &amp; Takeaways</h2>
         <h4 class="details-column-heading" id="key-achievements">Key Achievements</h4>
-        <ul class="metric-list" aria-labelledby="key-achievements" aria-label="Key achievements list" style="margin-top: 1rem">
-          <li aria-label="Achievement: WCAG 2.1 Level AA Compliant">
+        <ul class="metric-list" style="margin-top: 1rem">
+          <li>
             <strong>WCAG 2.1 Level AA Compliant:</strong> All pages pass QA
             testing.
           </li>
-          <li aria-label="Achievement: Fully Keyboard Accessible">
+          <li>
             <strong>Fully Keyboard Accessible:</strong> 100% of interactive
             elements are keyboard-navigable with clear focus indicators.
           </li>
-          <li aria-label="Achievement: Screen Reader Tested">
+          <li>
             <strong>Screen Reader Tested:</strong> Content is properly
             structured and labeled for VoiceOver screen readers.
           </li>
-          <li aria-label="Achievement: Accessible Forms">
+          <li>
             <strong>Accessible Forms:</strong> Contact form includes proper
             labels, error messaging, and inline validation without disrupting
             user flow.
           </li>
-          <li aria-label="Achievement: Inclusive User Experience">
+          <li>
             <strong>Inclusive UX:</strong> Features like dyslexia-friendly
             fonts, high-contrast modes, and motion preferences demonstrate
             commitment to diverse needs.
           </li>
-          <li aria-label="Achievement: Mobile and Responsive">
+          <li>
             <strong>Mobile &amp; Responsive:</strong> Accessible across devices
             without loss of functionality or comprehension.
           </li>
@@ -637,20 +632,20 @@
           Building this site reinforced several core insights about accessible
           design:
         </p>
-        <ul aria-labelledby="lessons-learned">
-          <li aria-label="Lesson: Testing is essential - manual testing and peer feedback">
+        <ul>
+          <li>
             <strong>Testing is essential:</strong> I relied heavily on manual
             testing with keyboard navigation and screen readers to catch minor
             issues. I also had peers test to get real-world feedback that I did
             not catch prior.
           </li>
-          <li aria-label="Lesson: Semantic HTML is very important - provides 80 percent of accessibility value">
+          <li>
             <strong>Semantic HTML is very important:</strong> Proper use of
             <code>&lt;button&gt;</code>, <code>&lt;nav&gt;</code>,
             <code>&lt;h1&gt;-&lt;h6&gt;</code> provides 80% of accessibility
             value with minimal effort.
           </li>
-          <li aria-label="Lesson: Inclusive design benefits everyone - improves experience for all users">
+          <li>
             <strong>Inclusive design benefits everyone:</strong> Clear labels,
             high contrast, and keyboard navigation improve the experience for
             all users, not just those with disabilities.
@@ -670,17 +665,14 @@
     </main>
     <footer
       class="site-footer"
-      aria-labelledby="footer-heading"
-      aria-label="Site footer"
     >
-      <small class="footer-meta" aria-label="Footer copyright">
+      <small class="footer-meta">
         <p
           class="footer-meta-line"
-          aria-label="Copyright 2026 Topgolf International, Inc."
         >
           ©2026 Topgolf International, Inc.
         </p>
-        <p class="footer-meta-line" aria-label="All rights reserved.">
+        <p class="footer-meta-line">
           All rights reserved.
         </p>
       </small>
